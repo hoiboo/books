@@ -16,11 +16,6 @@ collections:
   books: 
     output: true
 
-# Outputting
-permalink           : none
-paginate_path       : /page:num
-timezone            : null
-
 # Build settings
 
 #theme: minima
@@ -58,6 +53,7 @@ minima:
 #
 header_pages:
   - about.md
+  - _books/index.md
 
 # Set to `true` to show excerpts on the homepage.
 #
