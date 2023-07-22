@@ -10,7 +10,7 @@ permalink: /about/
 
 <hr/>
 
-{%- for book in site.books -%}
+{%- for book in site.reads -%}
     {%- if book.path contains "index.md" -%}
         <p> {{ book.path }} | {{ book.url }} </p>
     {%- endif -%}
@@ -18,11 +18,11 @@ permalink: /about/
 
 <hr/>
 
-{%- assign book_home = site.books | where: "path", "_books/index.md" | first -%}
+{%- assign book_home = site.reads | where: "path", "_reads/index.md" | first -%}
 <p> {{ book_home.path }} | {{ book_home.url }} </p>
 
 <h2>categories </h2>
-{%- for book in site.books -%}
+{%- for book in site.reads -%}
     {%- if book.category == "book" -%}
         <p> {{ book.path }}  | {{ book.title }} | {{ book.url }} </p>
     {%- endif -%}

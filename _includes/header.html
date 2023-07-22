@@ -14,7 +14,7 @@
         </label>
 
         <div class="trigger">
-          {%- assign book_home = site.books | where: "path", "_books/index.md" | first -%}
+          {%- assign book_home = site.reads | where: "path", "_reads/index.md" | first -%}
           {%- if book_home.title -%}
             <a class="page-link" href="{{ book_home.url | relative_url }}">{{ book_home.title | escape }}</a>
           {%- endif -%}
