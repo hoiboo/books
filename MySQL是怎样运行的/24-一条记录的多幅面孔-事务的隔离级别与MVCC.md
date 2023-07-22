@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 # 第24章 一条记录的多幅面孔-事务的隔离级别与MVCC
 ## 事前准备

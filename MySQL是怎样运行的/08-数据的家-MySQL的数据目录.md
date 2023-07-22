@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 # 第8章 数据的家-MySQL的数据目录
 ## 数据库和文件系统的关系

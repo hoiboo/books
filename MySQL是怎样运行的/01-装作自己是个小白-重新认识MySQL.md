@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 
 # 第1章 装作自己是个小白-重新认识MySQL

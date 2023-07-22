@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 
 # 第22章 后悔了怎么办-undo日志（上）

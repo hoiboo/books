@@ -1,9 +1,9 @@
 ---
-layout: none
+layout: empty
 ---
 
 ---
-layout: none
+layout: empty
 ---
 # 第2章 MySQL的调控按钮-启动选项和系统变量
 

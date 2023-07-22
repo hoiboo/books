@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 
 # 第16章 查询优化的百科全书-Explain详解（下）

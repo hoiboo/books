@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 # 第5章 盛放记录的大盒子-InnoDB数据页结构
 ## 不同类型的页简介

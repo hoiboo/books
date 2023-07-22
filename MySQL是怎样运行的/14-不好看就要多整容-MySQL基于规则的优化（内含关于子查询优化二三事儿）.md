@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 # 第14章 不好看就要多整容-MySQL基于规则的优化（内含关于子查询优化二三事儿）
 

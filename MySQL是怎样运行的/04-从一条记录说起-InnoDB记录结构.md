@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 
 # 第4章 从一条记录说起-InnoDB记录结构

@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 
 # 第21章 说过的话就一定要办到-redo日志（下）

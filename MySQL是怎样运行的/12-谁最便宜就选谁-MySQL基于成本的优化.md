@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: empty
 ---
 # 第12章 谁最便宜就选谁-MySQL基于成本的优化
 ## 什么是成本
