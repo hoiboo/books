@@ -1,14 +1,6 @@
-title: hoiboo books
+title: hoiboo
 author:
   name: hoiboo
-  email: your-email@domain.com
-
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  Write an awesome description for your new site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
 
 collections:
   posts:
@@ -51,9 +43,6 @@ minima:
 # If you want to link only specific pages in your header, uncomment this and add the path to the pages in
 # order as they should show up.
 #
-header_pages:
-  - about.md
-  - _books/index.md
 
 # Set to `true` to show excerpts on the homepage.
 #
