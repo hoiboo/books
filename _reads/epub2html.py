@@ -6,6 +6,7 @@ import ebooklib
 from bs4 import BeautifulSoup
 from PIL import Image
 from ebooklib import epub, utils
+from pypinyin import pinyin, Style
 
 args = sys.argv
 if len(args) < 2:
@@ -13,6 +14,11 @@ if len(args) < 2:
     exit(1)
 path = args[1]
 book_name = ((path.split("/")[-1]).split('.')[0]).lower().replace(" ", "_")
+bb = []
+pinyin_list = pinyin(book_name, style=Style.NORMAL)
+for pt in pinyin_list:
+    bb.append(pt[0])
+book_name = "".join(bb)
 
 if len(args) > 2:
     book_name = args[2]
