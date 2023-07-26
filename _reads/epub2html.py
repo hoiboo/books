@@ -1,13 +1,26 @@
 from io import BytesIO
 import json
 import os
+import sys
 import ebooklib
 from bs4 import BeautifulSoup
 from PIL import Image
 from ebooklib import epub, utils
-book_name = "sikaokuaiyuman"
+
+args = sys.argv
+if len(args) < 2:
+    print("第一个参数为epub的路径，如 python epub2html.py path/mybook.epub")
+    exit(1)
+path = args[1]
+book_name = ((path.split("/")[-1]).split('.')[0]).lower().replace(" ", "_")
+
+if len(args) > 2:
+    book_name = args[2]
+
+print(f"path:{path}, book_name:{book_name}")
+
 # http://docs.sourcefabric.org/projects/ebooklib/en/latest/tutorial.html#introduction
-book = epub.read_epub('/Users/zhoudedong/Downloads/'+book_name+'.epub')
+book = epub.read_epub(path)
 title = book.title
 
 
@@ -103,7 +116,8 @@ def out_resources():
         check_dir(out_file_name)
         type = item.get_type()
         # 提取书中的文本内容
-        if type == ebooklib.ITEM_DOCUMENT :
+        if type == ebooklib.ITEM_DOCUMENT:
+            print(f"【html】，文件：{file_name}, 类型：{type}")
             doc_list.append(item)
         elif type == ebooklib.ITEM_IMAGE:
             print(f"输出【图片】，文件：{file_name}, 类型：{type}")
@@ -111,7 +125,7 @@ def out_resources():
                 # 保存图片
                 image.save(out_file_name)
         elif type == ebooklib.ITEM_STYLE:
-            print(f"输出【html】，文件：{file_name}, 类型：{type}")
+            print(f"输出【style】，文件：{file_name}, 类型：{type}")
             with open(out_file_name, 'w') as f:
                 f.write(item.get_content().decode('utf-8'))
             styles.append(file_name)
@@ -222,10 +236,15 @@ def item_out(items):
             print(f"找不到输出，名称：{file_name}, 类型：{type}")
 
 def item_out_single():
-
+    first_item = doc_list[0]
+    first_file_name = first_item.file_name
+    ffs = first_file_name.split("/")
+    pf = ""
+    if len(ffs) > 1:
+        pf = str("../" * (len(ffs) - 1))
     styles_list = []
     for style in styles:
-        styles_list.append(f'<link rel="stylesheet" href="{style}">')
+        styles_list.append(f'<link rel="stylesheet" href="{pf}{style}">')
     styles_str = "\r\n".join(styles_list)   
     html_pre = f"""<!DOCTYPE html>
 <html lang="en">
@@ -242,7 +261,11 @@ def item_out_single():
     </body>
 </html>
 """
-    html = open(book_name+"/single.html", 'w')
+    
+    ffs[-1] = 'single.html'
+    single_name = "/".join(ffs)
+
+    html = open(book_name+"/"+single_name, 'w')
     html.write(html_pre)
     # 解析
     for item in doc_list:
