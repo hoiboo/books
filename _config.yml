@@ -7,6 +7,8 @@ collections:
     output: true
   reads: 
     output: true
+
+exclude: ["*.py"]
     
 # html 语言配置    
 lang: zh-CN
