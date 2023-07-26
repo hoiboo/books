@@ -235,6 +235,21 @@ def item_out(items):
         else:
             print(f"找不到输出，名称：{file_name}, 类型：{type}")
 
+def gen_single_toc(toc_list):
+    toc_array = [];
+    toc_array.append('<lu>')
+    for toc in toc_list:
+        # print(type(toc))
+        if (type(toc) is tuple) or (type(toc) is list):
+            toc_array.append(gen_toc(toc))
+        else:
+            v = toc.href.split("#")[0]
+
+            toc_array.append(f'<li><a href="#{v.replace(".", "_").replace("/", "_")}">{toc.title}</a></li>')
+    toc_array.append('</lu>')
+    return "".join(toc_array);
+
+
 def item_out_single():
     first_item = doc_list[0]
     first_file_name = first_item.file_name
@@ -247,7 +262,7 @@ def item_out_single():
         styles_list.append(f'<link rel="stylesheet" href="{pf}{style}">')
     styles_str = "\r\n".join(styles_list)   
     html_pre = f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -267,8 +282,13 @@ def item_out_single():
 
     html = open(book_name+"/"+single_name, 'w')
     html.write(html_pre)
+
+    toc_str = gen_single_toc(book.toc)
+    html.write(toc_str)
     # 解析
     for item in doc_list:
+        mp = item.file_name.replace(".", "_").replace("/", "_")
+        html.write(f'<a name="{mp}"></a>')
         soup = BeautifulSoup(item.get_content(), 'html.parser')
         html.write(str(soup.body).replace("<body>","").replace("</body>",""))
 
