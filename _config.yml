@@ -7,6 +7,9 @@ collections:
     output: true
   reads: 
     output: true
+    
+# html 语言配置    
+lang: zh-CN
 
 analysis:
   baiduhm:
