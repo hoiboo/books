@@ -1,0 +1,8 @@
+.book-nav {
+    margin: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+.book-nav a {
+    margin:0 20px;
+}

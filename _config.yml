@@ -8,6 +8,9 @@ collections:
   reads: 
     output: true
 
+analysis:
+  #baiduhm:
+  #  uid: b1ef741ff2932681a6e517698eb7214b
 # Build settings
 
 #theme: minima
