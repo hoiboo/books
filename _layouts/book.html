@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+  <link rel="stylesheet" href="{{ "/assets/css/books.css" | relative_url }}">
+
+  {%- include pagestyle.html -%}
+
+  <body>
+    <main class="page-content" aria-label="Content" style="margin: 10px;">
+      {{ content }}
+    </main>
+    {%- include booknav.html -%}
+  </body>
+
+  {%- include footer.html -%}
+  
+</html>
