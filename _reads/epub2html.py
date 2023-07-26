@@ -212,8 +212,10 @@ def item_out_single():
         {styles_str}
     </head>
     <body>
+    <main class="page-content" aria-label="Content" style="margin: 10px;">
 """
     html_end = """
+    </main>
     </body>
 </html>
 """
