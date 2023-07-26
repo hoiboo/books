@@ -1,5 +1,5 @@
 <div class="book-nav"> 
-    <a href="{{ page.prepage | page.url }}">上一页</a>
+    <a href="{{ page.previous | relative_url }}">上一页</a>
     <a href="{{ page.indexpage | page.url }}">目录</a>
-    <a href="{{ page.nextpage | page.url }}">下一页</a>
+    <a href="{{ page.next | relative_url }}">下一页</a>
 </div>
