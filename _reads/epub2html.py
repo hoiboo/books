@@ -23,21 +23,6 @@ print(f"path:{path}, book_name:{book_name}")
 book = epub.read_epub(path)
 title = book.title
 
-
-def fetch_toc_list(tocs):
-    toc_array = [];
-    for toc in tocs:
-        if (type(toc) is tuple) or (type(toc) is list):
-            # print(toc)
-            v = fetch_toc_list(toc)
-            toc_array.extend(v)
-        else:
-            toc_href = toc.href
-            # toc_title = toc.title
-            toc_array.append({"href":toc_href.split("#")[0], "title":toc.title})
-
-    return toc_array;
-
 def gen_item_toc(toc_item):
     return f'<li><a href="{toc_item.href}">{toc_item.title}</a></li>'
 
@@ -52,11 +37,6 @@ def gen_toc(toc_list):
             toc_array.append(gen_item_toc(toc))
     toc_array.append('</lu>')
     return "".join(toc_array);
-
-def item_out_test(items):
-    # 解析
-    for item in items:
-        print(f'名称：{item.title},type:{item.get_type()}')
 
 def check_dir(out_file_name):
     # 获取目录路径
@@ -76,8 +56,15 @@ category: book
     toc_str = gen_toc(book.toc)
     out_file_name = book_name+'/index.html'
     check_dir(out_file_name)
+
+    first_item = doc_list[2]
+    first_file_name = first_item.file_name
+    ffs = first_file_name.split("/")
+    ffs[-1] = 'single.html'
+    pf =  "/".join(ffs)
     with open(out_file_name, 'w') as f:
         f.write(toc_layout_str)
+        f.write(f'<p><a href="{pf}"> single【单页】</a></p>\r\n')
         f.write(toc_str)
 
 # 输出css
@@ -187,54 +174,6 @@ styles: [{styles_str}]
         idx = idx + 1
 
 
-
-def item_out(items):
-    # 解析
-    for item in items:
-        file_name = item.file_name
-        out_file_name = book_name+"/"+file_name
-        # 获取目录路径
-        directory = os.path.dirname(out_file_name)
-        # 如果目录不存在，则创建目录
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        type = item.get_type()
-        # 提取书中的文本内容
-        if type == ebooklib.ITEM_DOCUMENT :
-            
-            # epub中的内容是html格式，使用BeautifulSoup可以完美解析
-            # 将BeautifulSoup对象转换为字符串
-            # body = soup.body.find_all()
-            # 将字符串写入文件
-            print(f"输出【html】，文件：{file_name}, 类型：{type}")
-            soup = BeautifulSoup(item.get_content(), 'html.parser')
-            with open(out_file_name, 'w') as f:
-                f.write(str(soup.body).replace("<body>","").replace("</body>",""))
-                # for ctx in soup.body.contents:
-                #     et = str(ctx)
-                #     if et != '\n\r' and et != '\n' :
-                #         f.write(et)
-                
-        elif type == ebooklib.ITEM_IMAGE:
-            print(f"输出【图片】，文件：{file_name}, 类型：{type}")
-            #with open('html/'+file_name, 'w') as f:
-            #    f.write(item.get_content())
-            # 将图片数据转换为PIL图像对象
-            with Image.open(BytesIO(item.get_content())) as image:
-                # 保存图片
-                image.save(out_file_name)
-        elif type == ebooklib.ITEM_STYLE:
-            # epub中的内容是html格式，使用BeautifulSoup可以完美解析
-            #soup = BeautifulSoup(item.get_content(), )
-            # 将BeautifulSoup对象转换为字符串
-            #soup_str = str(soup)
-            # 将字符串写入文件
-            print(f"输出【html】，文件：{file_name}, 类型：{type}")
-            with open(out_file_name, 'w') as f:
-                f.write(item.get_content().decode('utf-8'))
-        else:
-            print(f"找不到输出，名称：{file_name}, 类型：{type}")
-
 def gen_single_toc(toc_list):
     toc_array = [];
     toc_array.append('<lu>')
@@ -251,24 +190,26 @@ def gen_single_toc(toc_list):
 
 
 def item_out_single():
-    first_item = doc_list[0]
+    first_item = doc_list[2]
     first_file_name = first_item.file_name
     ffs = first_file_name.split("/")
+    pt = "../../"
     pf = ""
     if len(ffs) > 1:
         pf = str("../" * (len(ffs) - 1))
+        pt = str("../" * (len(ffs) + 1))
     styles_list = []
     for style in styles:
         styles_list.append(f'<link rel="stylesheet" href="{pf}{style}">')
-    styles_str = "\r\n".join(styles_list)   
+    styles_str = "\r\n\t\t".join(styles_list)   
     html_pre = f"""<!DOCTYPE html>
 <html lang="zh-CN">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{pt}assets/css/books.css">
         <title> {book.title} </title>
         {styles_str}
-
     </head>
     <body>
 """
@@ -296,12 +237,11 @@ def item_out_single():
     html.flush()   
     html.close()
 
-
-# toc_list = fetch_toc_list(book.toc)
-# out_index()
 res = out_resources()
 doc_list = res[0]
 styles = res[1]
-#item_out_with_toc()
+
+out_index()
+item_out_with_toc()
 item_out_single()
     
