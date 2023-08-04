@@ -1,7 +1,7 @@
 .bodycontent {
   display: block;
   font-family: "";
-  font-size: 0.77419em;
+  font-size: 1em;
   letter-spacing: auto;
   line-height: 1.2;
   margin-bottom: 0.6em;
@@ -22,7 +22,7 @@
 }
 .boldf {
   display: block;
-  font-size: 0.77419em;
+  font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 1em;
   margin-left: 0;
@@ -79,12 +79,12 @@
   margin-top: 0.5em;
 }
 .calibre4 {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.2;
   vertical-align: super;
 }
 .calibre5 {
-  font-size: 0.77419em;
+  font-size: 1.1em;
   line-height: 1.2;
   vertical-align: sub;
 }
@@ -135,7 +135,7 @@
 .dateauthor {
   display: block;
   font-family: "FZKTK--GBK1-0", "FZKT--GB1-4", "STKaiti-SC-Regular", "STKAITI";
-  font-size: 1em;
+  font-size: 1.1em;
   letter-spacing: auto;
   line-height: 1.2;
   margin-bottom: 1em;
@@ -162,7 +162,7 @@
 .poetrytext {
   display: block;
   font-family: "FZKTK--GBK1-0", "FZKT--GB1-4", "STKaiti-SC-Regular", "STKAITI";
-  font-size: 0.77419em;
+  font-size: 1em;
   letter-spacing: auto;
   line-height: 1.2;
   margin-bottom: 0;
@@ -174,7 +174,7 @@
 .quotation {
   display: block;
   font-family: "FZKTK--GBK1-0", "FZKT--GB1-4", "STKaiti-SC-Regular", "STKAITI";
-  font-size: 0.77419em;
+  font-size: 1.1em;
   letter-spacing: auto;
   line-height: 1.2;
   margin-bottom: 0.1em;
@@ -203,9 +203,9 @@
 .text {
   display: block;
   font-family: "";
-  font-size: 1em;
+  font-size: 1.2em;
   letter-spacing: auto;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 0.6em;
   margin-left: 0;
   margin-right: 0;
