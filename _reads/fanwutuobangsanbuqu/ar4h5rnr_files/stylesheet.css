@@ -1,0 +1,230 @@
+.bodycontent {
+  display: block;
+  font-family: "";
+  font-size: 0.77419em;
+  letter-spacing: auto;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.6em;
+  text-align: left;
+  text-indent: 2em;
+}
+.bold {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: 0;
+}
+.boldf {
+  display: block;
+  font-size: 0.77419em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: 2.3em;
+}
+.boldt {
+  font-weight: bold;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+.calibre {
+  display: block;
+  font-size: 1.29167em;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.calibre1 {
+  height: 100%;
+  width: auto;
+}
+.calibre2 {
+  font-size: 0.77419em;
+  line-height: 1.2;
+  vertical-align: super;
+}
+.calibre3 {
+  border-bottom-color: currentColor;
+  border-bottom-style: inset;
+  border-bottom-width: 1px;
+  border-left-color: currentColor;
+  border-left-style: inset;
+  border-left-width: 1px;
+  border-right-color: currentColor;
+  border-right-style: inset;
+  border-right-width: 1px;
+  border-top-color: currentColor;
+  border-top-style: inset;
+  border-top-width: 1px;
+  color: gray;
+  display: block;
+  height: 2px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+.calibre4 {
+  font-size: 1em;
+  line-height: 1.2;
+  vertical-align: super;
+}
+.calibre5 {
+  font-size: 0.77419em;
+  line-height: 1.2;
+  vertical-align: sub;
+}
+.calibre6 {
+  display: block;
+  height: 0;
+}
+.calibre7 {
+  height: auto;
+  width: auto;
+}
+.copyright {
+  color: #000;
+  display: block;
+  font-family: "";
+  font-size: 1.29032em;
+  font-weight: bold;
+  letter-spacing: auto;
+  line-height: 2em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: left;
+  text-indent: 0;
+}
+.cover {
+  border-bottom-color: currentColor;
+  border-bottom-style: none;
+  border-bottom-width: 0;
+  border-left-color: currentColor;
+  border-left-style: none;
+  border-left-width: 0;
+  border-right-color: currentColor;
+  border-right-style: none;
+  border-right-width: 0;
+  border-top-color: currentColor;
+  border-top-style: none;
+  border-top-width: 0;
+  display: block;
+  height: 100%;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: center;
+}
+.dateauthor {
+  display: block;
+  font-family: "FZKTK--GBK1-0", "FZKT--GB1-4", "STKaiti-SC-Regular", "STKAITI";
+  font-size: 1em;
+  letter-spacing: auto;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.5em;
+  text-align: right;
+}
+.onetitle {
+  color: #000;
+  display: block;
+  font-family: "";
+  font-size: 1.29032em;
+  font-weight: bold;
+  letter-spacing: auto;
+  line-height: 1.5em;
+  margin-bottom: 5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.8em;
+  text-align: center;
+  text-indent: 0;
+}
+.poetrytext {
+  display: block;
+  font-family: "FZKTK--GBK1-0", "FZKT--GB1-4", "STKaiti-SC-Regular", "STKAITI";
+  font-size: 0.77419em;
+  letter-spacing: auto;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.3em;
+  text-align: center;
+}
+.quotation {
+  display: block;
+  font-family: "FZKTK--GBK1-0", "FZKT--GB1-4", "STKaiti-SC-Regular", "STKAITI";
+  font-size: 0.77419em;
+  letter-spacing: auto;
+  line-height: 1.2;
+  margin-bottom: 0.1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  text-align: left;
+  text-indent: 2em;
+}
+.sgc-toc-level {
+  display: block;
+  margin-left: 0;
+}
+.sgc-toc-level1 {
+  display: block;
+  margin-left: 2em;
+}
+.sgc-toc-title {
+  display: block;
+  font-size: 1.54839em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.text {
+  display: block;
+  font-family: "";
+  font-size: 1em;
+  letter-spacing: auto;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.6em;
+  text-align: left;
+  text-indent: 2em;
+}
+.twotitle {
+  color: #000;
+  display: block;
+  font-family: "";
+  font-size: 1.29032em;
+  font-weight: bold;
+  letter-spacing: auto;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: center;
+  text-indent: 0;
+}
