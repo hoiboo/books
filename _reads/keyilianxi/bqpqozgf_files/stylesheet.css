@@ -42,7 +42,6 @@
 .contents {
   display: block;
   font-size: 1em;
-  line-height: 200%;
   margin-left: 0;
   text-align: justify;
 }
@@ -50,7 +49,6 @@
   display: block;
   font-size: 1.54839em;
   font-weight: normal;
-  line-height: 200%;
   text-align: center;
 }
 .contents1 {
@@ -77,10 +75,8 @@
   font-size: 1em;
   font-weight: normal;
   line-height: 200%;
-  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 1em;
   text-align: left;
   text-indent: 0;
 }
@@ -179,12 +175,8 @@
 .ziti2 {
   display: block;
   font-size: 1em;
-  line-height: 200%;
-  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 1em;
-  text-indent: 2em;
 }
 .pcalibre:hover {
   color: #a9732d;
