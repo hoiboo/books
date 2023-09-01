@@ -1,7 +1,7 @@
 ---
 layout: post
 category: book
-title: "《MySQL 是怎样运行的：从根儿上理解 MySQL》"
+title: MySQL 是怎样运行的
 ---
 > 原始出处：[github.com/Relph1119/mysql-learning-notes](https://github.com/Relph1119/mysql-learning-notes)
 
