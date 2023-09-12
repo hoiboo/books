@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+    <title>前言</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="../../page_styles.css"/>
+
+  
+
+  <link href="../../calibreHtmlOutBasicCss.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+
+<div class="calibreMain">
+  <div class="calibreEbookContent">
+    
+<h1 class="firsttitle">
+<a href="part0000.xhtml#toc7">前言</a>
+</h1>
+<p class="content">计算机编程有很多方面。Fred Brooks在《人月神话》一书中为我们描绘了全景，他的文章强调了管理在大型软件项目中所起的关键作用。而Steve McConnell在《代码大全》一书中更具体地传授了良好的编程风格。这两本书所讨论的是好软件的关键因素和专业程序员应有的特征。遗憾的是，仅仅熟练地运用这些可靠的工程原理，不见得一定能够如期完成软件并顺利运行。</p>
+<p class="content_1">关于本书</p>
+<p class="content">本书描述了计算机编程更具魅力的一面：在可靠的工程之外，在洞察力和创造力范围内结晶而出的编程珠玑。正如自然界中的珍珠来自于磨砺牡蛎的细沙一样，这些编程珠玑来自于磨砺程序员的实际问题。书中的程序都很有趣，传授了重要的编程技巧和基本的设计原理。</p>
+<p class="content">本书大部分内容最初发表在《ACM 通讯》中我主持的“编程珠玑”专栏。这些内容经过汇总和修订，在1986年结集出版，成为了本书的第1版。第1版的13篇文章中，有12篇都在本版中做了大幅修订；此外，本版还补充了3篇新的内容。</p>
+<p class="content">阅读本书所需的唯一背景知识就是某种高级语言的编程经验。书中偶尔会出现一些高级技术（如 C++中的模板等），对此不熟悉的读者可以跳过这些内容，基本上不影响阅读。</p>
+<p class="content">本书每一章都独立成篇，各章之间却又有着逻辑分组。第1章至第5章构成本书的第一部分，这部分回顾了编程的基本原理：问题定义、算法、数据结构以及程序验证和测试。第二部分围绕效率这个主题展开。效率问题有时本身很重要，又永远都是进入有趣编程问题的绝佳跳板。第三部分用这些技术来解决排序、搜索和字符串等重要问题。</p>
+<p class="content">阅读本书的一个提示：不要读得太快。要仔细阅读，一次读一章。要尝试解答书中提出的问题——有些问题需要集中精力思考一两个小时才会变得容易。然后，要努力解答每章末尾的习题：当读者写下答案时，从本书学到的大部分知识就会跃然纸上。如有可能，要先与朋友和同事讨论一下自己的思路，再去查阅本书末尾的提示和答案。每章末尾的“深入阅读”并不算是学术意义上的参考文献表，而是我推荐的一些好书，这些书是我个人藏书的重要部分。</p>
+<p class="content">本书是为程序员而写的。我希望书中的习题、提示、答案和深入阅读对每个人都有用。本书已用作算法、程序验证和软件工程等课程的教材。附录A中的算法分类可供实际编程人员参考，该附录同时还说明了如何在算法和数据结构课程中使用本书。</p>
+<p class="content_1">代码</p>
+<p class="content">本书第1版中的伪代码程序其实都已实现，但当时未公开。在本版中，我重写了所有的老程序，并且编写了差不多等量的新代码。这些程序可以在 http://netlib.bell-labs.com/cm/cs/pearls/下载。代码中包含许多对函数进行测试、调试和计时的脚手架程序。该网站还提供了其他相关的材料。由于现在许多的软件都能在线获得，因此本版的一个新增内容就是：如何评估和使用软件组件。</p>
+<p class="content">本书的程序采用了简洁的代码风格：短变量名，很少空行，很少或没有错误检测。这种风格不适用于大型软件项目，却有助于表达算法的核心思想。第5章第1个习题的答案给出了这种风格的更多细节。</p>
+<p class="content">本书包含几个实际的C和C++程序，其余大多数函数都用伪代码来表示，这样既节省了空间，又避免了繁琐的语法。记号for i = [0,n)表示在从0至n-1的范围内对i进行迭代。在这类 for 循环中，左圆括号和右圆括号代表开区间（不包括端点值），而左方括号和右方括号代表闭区间（包括端点值）。表达式function(i,j)仍表示用参数i和j调用函数，而array[i,j]仍表示访问数组元素。</p>
+<p class="content">本版所提供的许多程序的运行时间都基于“我的计算机”——一台128 MB内存、运行Windows NT 4.0操作系统的400 MHz Pentium II。我测试了这些程序在其他几台机器上的运行时间，书中记录了我观察到的一些显著的差异。所有的实验都使用了最高级别的编译器优化。建议读者在自己的计算机上对这些程序计时，我敢打赌读者将会发现相似比率的运行时间。</p>
+<p class="content_1">致第1版的读者</p>
+<p class="content">我希望你们在翻阅本版时的第一感觉是“看起来很眼熟啊”，而过几分钟又得出结论“以前从来没读过”。</p>
+<p class="content">本版与第1版主题相同，但涉及的范围更广。计算技术已经在数据库、网络和用户界面等重要领域取得了长足的进展。大多数程序员应当都熟悉这些技术。但是，这些领域的中心仍然是那些核心编程问题，这些问题还是本书的主题。相对于第1版而言，本版可以比喻为一条稍微长大了的鱼，游进了一个大得多的池塘。</p>
+<p class="content">第1版第4章关于实现二分搜索的一节内容经过扩充成为了本版中关于测试、调试和计时的第5章。第1版第11章经过扩充，在本版中分成了第12章（还讨论原来的问题）和第13章（讨论集合表示）。第1版第13章描述的在64 KB地址空间运行的拼写检查器已被删除，但其要点仍保留在13.8节中。新增的第15章讨论字符串问题。本版在第1版的各章中插入了许多新节，同时删除了一些旧节。新增的习题、答案以及4个附录使得本版篇幅比第1版增加了25%。</p>
+<p class="content">本版保留了许多原有的实例研究，因为它们具有历史价值。有些老故事则用现代术语做了改写。</p>
+<p class="content_1">第1版的致谢</p>
+<p class="content">对许多人给予我的诸多帮助，我一直心存感激。Peter Denning和Stuart Lynn最早设想在《ACM通讯》上开设专栏。Peter在计算机学会（ACM）内做了大量的工作，促成了该专栏，并动员我来主持这个专栏。ACM总部员工（特别是Roz Steier和Nancy Adriance）在本书各篇文章最初发表时给予大力协助。我要特别感谢ACM鼓励我以目前这种经过修订的形式来出版各篇文章；还要特别感谢《ACM通讯》的众多读者，他们对原始各篇文章的评论使得这个扩充版本成为必要的和可能的。</p>
+<p class="content">Al Aho、Peter Denning、Mike Garey、David Johnson、Brian Kernighan、John Linderman、Doug McIlroy和Don Stanat都非常仔细地读过每一章，尽管时间期限常常很紧。我还要感谢以下诸位的宝贵意见：Henry Baird、Bill Cleveland、David Gries、Eric Grosse、Lynn Jelinski、Steve Johnson、Bob Melville、Bob Martin、Arno Penzias、Marilyn Roper、Chris Van Wyk、Vic Vyssotsky和Pamela Zave。Al Aho、Andrew Hume、Brian Kernighan、Ravi Sethi、Laura Skinger和Bjarne Stroustrup在本书的成书过程中给予了无法估量的帮助，而西点军校EF 485课程的学员实际核对了倒数第二稿<span id="ref2">
+<a href="part0006.xhtml#annot2">[1]</a>
+</span>
+ 。再次谢谢诸位。</p>
+<p class="content_1">第2版的致谢</p>
+<p class="content">Dan Bentley、Russ Cox、Brian Kernighan、Mark Kernighan、John Linderman、Steve McConnell、Doug McIlroy、Rob Pike、Howard Trickey和Chris Van Wyk都非常仔细地阅读过本版。我还要感谢以下诸位的宝贵意见：Paul Abrahams、Glenda Childress、Eric Grosse、Ann Martin、Peter McIlroy、Peter Memishian、Sundar Narasimhan、Lisa Ricker、Dennis Ritchie、Ravi Sethi、Carol Smith、Tom Szymanski和Kentaro Toyama。感谢Addison-Wesley出版社的Peter Gordon和他的同事们帮助筹划了本版。</p>
+<p class="content_3">Jon Bentley</p>
+<p class="content_3">于新泽西州Murray Hill</p>
+<p class="content_3">1985年12月</p>
+<p class="content_3">1999年8月</p>
+<hr class="calibre2"/>
+<p class="noindent" id="annot2">
+<a href="part0006.xhtml#ref2">[1].</a>
+ 原作者在给译者的电子邮件中指出，他曾在西点军校授课，用本书草稿作为教材，EF为Engineering Fundamentals（工程基础）系的缩写。——译者注</p>
+
+
+
+  </div>
+
+  <div class="calibreEbNav">
+    
+      <a href="part0005.xhtml" class="calibreAPrev">上一页
+</a>
+    
+
+    <a href="../../../kvhzrpvu.html" class="calibreAHome">目录
+</a>
+
+    
+      <a href="part0007.xhtml" class="calibreANext">下一页
+</a>
+    
+  </div>
+
+</div>
+
+</body>
+</html>

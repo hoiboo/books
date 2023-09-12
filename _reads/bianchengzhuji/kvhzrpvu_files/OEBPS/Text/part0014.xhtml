@@ -1,0 +1,187 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+    <title>附录C 时空开销模型</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="../../page_styles.css"/>
+
+  
+
+  <link href="../../calibreHtmlOutBasicCss.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+
+<div class="calibreMain">
+  <div class="calibreEbookContent">
+    
+<h1 class="firsttitle">
+<a href="part0000.xhtml#toc138">附录C 时空开销模型</a>
+</h1>
+<p class="content">7.2 节描述了两个用来估算各种基本运算时空开销的小程序，本附录展示了如何将它们扩展成一整页的时间和空间估算程序。本书网站上提供了这两个程序的完整源代码。</p>
+<p class="content">程序 spacemod.cpp 为 C++中的各种结构提供了一种空间开销模型。程序的第 1部分使用</p>
+<p class="content">cout &lt;&lt; "sizeof(char)=" &lt;&lt; sizeof(char);</p>
+<p class="content">cout &lt;&lt; " sizeof(short)=" &lt;&lt; sizeof(short);</p>
+<p class="content">之类的语句序列对基本对象进行了精确度量：</p>
+<p class="content">sizeof(char)=1 sizeof(short)=2 sizeof(int)=4</p>
+<p class="content">sizeof(float)=4 sizeof(struct *)=4 sizeof(long)=4</p>
+<p class="content">sizeof(double)=8</p>
+<p class="content">该程序还使用如下的命名习惯定义了十多个结构：</p>
+<p class="content">struct structc { char c; };</p>
+<p class="content">struct structic { int i; char c; };</p>
+<p class="content">struct structip { int i; structip *p; };</p>
+<p class="content">struct structdc { double d; char c; };</p>
+<p class="content">struct structc12 { char c[12]; };</p>
+<p class="content">程序定义了一个宏，在该宏定义中，首先给出相应结构的sizeof 信息，然后用类似下面的形式给出对new分配的字节数的估计：</p>
+<p class="content">structc　　1　 48 48 48 48 48 48 48 48 48 48</p>
+<p class="content">structic　 8　 48 48 48 48 48 48 48 48 48 48</p>
+<p class="content">structip　 8　 48 48 48 48 48 48 48 48 48 48</p>
+<p class="content">structdc　 16　64 64 64 64 64 64 64 64 64 64</p>
+<p class="content">structcd　 16　64 64 64 64 64 64 64 64 64 64</p>
+<p class="content">structcdc　24　-3744 4096 64 64 64 64 64 64 64 64</p>
+<p class="content">structiii　12　48 48 48 48 48 48 48 48 48 48</p>
+<p class="content">每行的第一个数由 sizeof 给出，接下来的 10 个数反映了 new 返回的连续指针之间的差别。这个输出是很常见的：大部分数都是一致的，但是分配器偶尔会突然地跳跃一下。</p>
+<p class="content">这个宏输出一行内容：</p>
+<p class="content">#define MEASURE(T,text) {　　　　　　　　　　　 \</p>
+<p class="content_5">cout &lt;&lt; text &lt;&lt; "\t";　　　　　　　　　　　　\</p>
+<p class="content_5">cout &lt;&lt; sizeof(T) &lt;&lt; "\t";　　　　　　　　　\</p>
+<p class="content_5">int lastp = 0;　　　　　　　　　　　　　　　　 \</p>
+<p class="content_5">for (int i = 0; i &lt; 11; i++) {　　　　　　 \</p>
+<p class="content_7">T *p = new T;　　　　　　　　　　　　　　 \</p>
+<p class="content_7">int thisp = (int) p;　　　　　　　　　　\</p>
+<p class="content_7">if (lastp != 0)　　　　　　　　　　　　　\</p>
+<p class="content_8">cout &lt;&lt; " " &lt;&lt; thisp - lastp;　 \</p>
+<p class="content_7">lastp = thisp;　　　　　　　　　　　　　　\</p>
+<p class="content_5">}　　　　　　　　　　　　　　　　　　　　　　　　 \</p>
+<p class="content_5">cout &lt;&lt; "\n";　　　　　　　　　　　　　　　　　\</p>
+<p class="content">}</p>
+<p class="content">调用这个宏需要两个参数，第一个参数是结构名，第二个参数是包含在引号中的相同名字：</p>
+<p class="content">MEASURE(structc,"structc");</p>
+<p class="content">（我的第一份草稿使用了带有结构类型参数的 C++模板，但是 C++实现的人为因素会导致度量结果差别很大。）</p>
+<p class="content">下表总结了该程序在我机器上的输出结果：</p>
+<div class="pic_"><img alt="" src="../Images/image00251.jpeg" class="calibre3"/>
+</div>
+<p class="content">左边一列数帮助我们估算结构的 sizeof 信息。估算时首先对结构中所有类型的sizeof 求和，这就解释了为什么structip的sizeof 是8 字节。此外，我们还必须考虑对齐问题：尽管 structcdc 结构的组成部分总共需要 10 个字节（两个 char 和一个double），但是存储structcdc需要24个字节。</p>
+<p class="content">右边一列给出了new运算符分配的空间。可以看出，对于sizeof 不超过12字节的结构，需要分配的空间都是48字节；sizeof 从13字节到28字节的结构需要64字节的空间。一般说来，分配的块大小是16的倍数，约有36字节～47字节的额外开销<span id="ref61">
+<a href="part0014.xhtml#annot61">[1]</a>
+</span>
+ ，这样的开销是很大的，我使用的其他系统在表示8字节的记录时只需要8字节的额外开销。</p>
+<p class="content">7.2节还描述了一个估算特定C运算开销的小程序。我们可以将它一般化为一个一整页的 timemod.c 程序，用于为一组 C 运算提供时间开销模型。（该程序的前身由Brian Kernighan、Chris Van Wyk和我于1991年编写。）程序的main函数包含了一系列的T（标题）行和紧随其后的M行来度量运算的开销：</p>
+<p class="content">T("Integer Arithmetic");</p>
+<p class="content">M({});</p>
+<p class="content">M(k++);</p>
+<p class="content">M(k = i + j);</p>
+<p class="content">M(k = i - j);</p>
+<p class="content_5">...</p>
+<p class="content">这些行（以及一些类似的行）会产生如下的输出：</p>
+<p class="content">Integer Arithmetic (n=5000)</p>
+<p class="content_4">{}　　　　　　　 250　　261　 250　　250　　 251　　10</p>
+<p class="content_4">k++　　　　　　　471　　460　 471　　461　　 460　　19</p>
+<p class="content_4">k = i + j　　　 491　　491　 500　　491　　 491　　20</p>
+<p class="content_4">k = i – j　　　 440　　441　 441　　440　　 441　　18</p>
+<p class="content_4">k = i * j　　　 491　　490　 491　　491　　 490　　20</p>
+<p class="content_4">k = i / j　　　2414　 2433　2424　　2423　　2414　97</p>
+<p class="content_4">k = i % j　　　2423　 2414　2423　　2414　　2423　97</p>
+<p class="content_4">k = i &amp; j　　　 491　　491　 480　　491　　 491　　20</p>
+<p class="content_4">k = i | j　　　 440　　441　 441　　440　　 441　　18</p>
+<p class="content">第一列给出了循环体内执行的运算</p>
+<p class="content">for i = [1,n]</p>
+<p class="content_5">for j = [1,n]</p>
+<p class="content_7">op</p>
+<p class="content">接下来的5列给出了该循环5次执行的时钟点击时间<span id="ref62">
+<a href="part0014.xhtml#annot62">[2]</a>
+</span>
+ （本系统以毫秒为单位）。（这些时间应该是一致的，不一致的数值能够帮助我们发现可疑的运行。）最后一列以纳秒为单位给出了每个运算的平均开销。第一行说明执行空循环体需要 10 纳秒，下一行说明使变量k自增大约需要9纳秒的额外时间。除了除法和模运算的开销高一个数量级外，所有算术和逻辑运算所需的开销基本相同。</p>
+<p class="content">这个方法给出了我机器上的粗略估算，不作过多解释。在实验过程中，我把优化选项都禁用了，因为启用优化选项后，优化器会删除计时循环，导致所有的时间都为零。</p>
+<p class="content">这一工作是通过M宏完成的，如下面的伪代码所示：</p>
+<p class="content">#define M(op)</p>
+<p class="content_5">print op as a string</p>
+<p class="content_5">timesum = 0</p>
+<p class="content_5">for trial = [0,trials)</p>
+<p class="content_7">start = clock()</p>
+<p class="content_7">for i = [1,n]</p>
+<p class="content_8">fi = i</p>
+<p class="content_8">for j = [1,n]</p>
+<p class="content_14">op</p>
+<p class="content_4">t = clock()-start</p>
+<p class="content_4">print t</p>
+<p class="content_4">timesum += t</p>
+<p class="content">print 1e9*timesum / (n*n * trials * CLOCKS_PER_SEC)</p>
+<p class="content">该开销模型的完整代码可以在本书网站上找到。</p>
+<p class="content">下面我们来看看该程序在我机器上的输出结果。由于时钟点击是一致的，我们将其忽略，只给出以纳秒为单位的平均时间。</p>
+<p class="content">Floating Point Arithmetic (n=5000)</p>
+<p class="content_4">fj=j;　　　　　　　　　　18</p>
+<p class="content_4">fj=j; fk = fi + fj　　26</p>
+<p class="content_4">fj=j; fk = fi – fj　　27</p>
+<p class="content_4">fj=j; fk = fi * fj　　24</p>
+<p class="content_4">fj=j; fk = fi / fj　　78</p>
+<p class="content">Array Operations (n=5000)</p>
+<p class="content_4">k = i + j　　　　　　　 17</p>
+<p class="content_4">k = x[i] + j　　　　　 18</p>
+<p class="content_4">k = i + x[j]　　　　　 24</p>
+<p class="content_4">k = x[i] + x[j]　　　 27</p>
+<p class="content">这些浮点运算都先把整数j赋给浮点数fj（大约需要8纳秒）。在外循环中，我们将整数i的值赋给了浮点数fi。浮点运算本身的开销跟相应的整数运算差不多，数组运算的开销也都不大。</p>
+<p class="content">下面的输出结果有助于我们对一般的控制流和一些特定排序操作的理解：</p>
+<p class="content">Comparisons (n=5000)</p>
+<p class="content_4">if (i &lt; j) k++　　　　　　 20</p>
+<p class="content_4">if (x[i] &lt; x[j]) k++　　　25</p>
+<p class="content">Array Comparisons and Swaps (n=5000)</p>
+<p class="content_4">k = (x[i]&lt;x[k]) ? -1:1　 34</p>
+<p class="content_4">k = intcmp(x+i,x+j)　　　52</p>
+<p class="content_4">swapmac(i,j)　　　　　　　 41</p>
+<p class="content_4">swapfunc(i,j)　　　　　　 65</p>
+<p class="content">比较和交换操作的函数版本比内联版本的开销多20纳秒。9.2节比较了使用函数、宏和内联代码计算两个值中的最大值的开销：</p>
+<p class="content">Max Function,Macro and Inline (n=5000)</p>
+<p class="content">k = (i &gt; j) ? i : j　　　 26</p>
+<p class="content">k = maxmac(i,j)　　　　　 26</p>
+<p class="content">k = maxfunc(i,j)　　　　　54</p>
+<p class="content">rand 函数的开销相对较小（不过bigrand 函数需要调用两次 rand），开方运算的开销比基本算术运算大一个数量级（尽管只是除法运算的两倍），简单三角函数运算的开销是开方的两倍，而高级三角函数运算则需要微秒时间。</p>
+<p class="content">Math Functions (n=1000)</p>
+<p class="content_4">k = rand()　　　　　　　40</p>
+<p class="content_4">fk = j+fi　　　　　　　 20</p>
+<p class="content_4">fk = sqrt(j+fi)　　　 188</p>
+<p class="content_4">fk = sin(j+fi)　　　　 344</p>
+<p class="content_4">fk = sinh(j+fi)　　　 2229</p>
+<p class="content_4">fk = asin(j+fi)　　　 973</p>
+<p class="content_4">fk = cos(j+fi)　　　　 353</p>
+<p class="content_4">fk = tan(j+fi)　　　　 465</p>
+<p class="content">由于这些操作的开销较高，我们缩小了n的值，但内存分配的开销却更大，需要更小的n：</p>
+<p class="content">Memory Allocation (n=500)</p>
+<p class="content">free(malloc(16))　　　2484</p>
+<p class="content">free(malloc(100))　　 3044</p>
+<p class="content">free(malloc(2000))　　4959</p>
+<hr class="calibre2"/>
+<p class="noindent" id="annot61">
+<a href="part0014.xhtml#ref61">[1].</a>
+ 对于sizeof不超过12字节的结构而言。——译者注</p>
+<p class="noindent" id="annot62">
+<a href="part0014.xhtml#ref62">[2].</a>
+ 执行前后时钟点的差，用于计时。——译者注</p>
+
+
+
+  </div>
+
+  <div class="calibreEbNav">
+    
+      <a href="part0013.xhtml" class="calibreAPrev">上一页
+</a>
+    
+
+    <a href="../../../kvhzrpvu.html" class="calibreAHome">目录
+</a>
+
+    
+      <a href="part0015.xhtml" class="calibreANext">下一页
+</a>
+    
+  </div>
+
+</div>
+
+</body>
+</html>
