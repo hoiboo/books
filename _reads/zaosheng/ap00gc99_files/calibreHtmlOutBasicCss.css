@@ -25,7 +25,7 @@ body{
 }
 
 .calibreEbookContent{
-  padding:20px;
+  padding:5px;
 }
 
 .calibreEbNav, .calibreEbNavTop{
@@ -34,6 +34,7 @@ body{
   color:white;
   padding:10px;
   text-align:center;
+  font-size: 16px;
 }
 
 .calibreEbNavTop{
@@ -43,7 +44,7 @@ body{
 }
 
 .calibreEbNav a, .calibreEbNavTop a{
-  padding:0px 5px;
+  padding:0px 15px;
 }
 
 .calibreTocIndex{
