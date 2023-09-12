@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>噪声</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="../page_styles.css"/>
+
+  
+
+
+<link href="../calibreHtmlOutBasicCss.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="calibreMeta">
+  <div class="calibreMetaTitle">
+  
+  
+    
+    <h1>
+      <a href="../../ap00gc99.html">噪声
+</a>
+    </h1>
+    
+    
+  
+  </div>
+  <div class="calibreMetaAuthor">
+    丹尼尔·卡尼曼,奥利维耶·西博尼,卡斯·R.桑斯坦
+
+  </div>
+</div>
+
+<div class="calibreMain">
+
+  <div class="calibreEbookContent">
+    
+      <div class="calibreEbNavTop">
+        
+          <a href="part0020.html" class="calibreAPrev">previous page
+</a>
+        
+
+        
+          <a href="part0022.html" class="calibreANext">next page
+</a>
+        
+      </div>
+    
+
+    
+<h1 id="isbn9787572221354_2_11" class="prefacetitle-c">第5章<br class="calibre3"/>测量误差，噪声与偏差的代价一样大</h1>
+<p class="bodycontent-1-fangsong">显而易见的是，一致性的偏差会引发代价高昂的错误。如果体重秤在你每次称体重时都自动加上一定的重量，如果一位乐观的经理总是预测项目只需花费实际所需时间的一半，如果一位谨小慎微的经理总是年复一年地低估未来的销售额，那么后果都将会非常严重。</p>
+<p class="bodycontent-1-fangsong">我们已经知道，噪声会引发代价高昂的错误。如果一位经理大多数时候预测的项目所需时间只是实际所需时间的一半，而在少数预测中又将前者估计成后者的两倍，那么我们是否可以说在平均水平上这位经理的判断是对的呢？答案是否定的。这些不同的误差是累加的，而不会互相抵消。</p>
+<p class="bodycontent-1-fangsong">因此，我们想到了一个很重要的问题：偏差和噪声是如何引起误差的？多少偏差和噪声会引起误差？本章试图回答这些问题。这一章所要呈现的信息非常明确：在各种专业判断中，当以准确性为目标时，偏差和噪声在计算总体误差时扮演着相同的角色。在有些案例中，偏差是误差的主导因素；在其他案例中，噪声则是主导因素，而且这类案例比我们预想的更为常见。但在每一个案例中，每减少一个单位的噪声对总体误差的影响和每减少一个单位的偏差对总体误差的影响是一样的。因此，<b class="calibre1">测量和减少噪声应该与测量和减少偏差同等重要。</b></p>
+<p class="bodycontent-1-fangsong">这一结论是依据一种特定的误差测量方法得出的，这种测量方法由来已久，并且被科学界和统计学领域广泛接受。我们将在本章对其历史进行回顾，并简单介绍它的原理。</p>
+<h3 class="txtheading" id="isbn9787572221354_2_11_1_1">GoodSell应该减少噪声吗</h3>
+<p class="bodycontent-1-fangsong">假设有一家名为GoodSell的大型零售公司，这家公司雇用了一些销售预测师，他们的工作就是预测GoodSell在各地区的市场份额。可能是由于读过关于噪声的图书，预测部门的主管埃米·西姆金（Amy Simkin）进行了噪声审查。所有预测师都对同一个地区的市场份额进行了独立评估。</p>
+<p class="bodycontent-1-fangsong">图5-1显示了噪声审查的结果（平滑得难以置信）。西姆金可以看到，这些预测分布在常见的钟形曲线（即正态分布，或称高斯分布）中。</p>
+<div class="chatu_img">
+<img src="../images/00006.jpeg" class="pic-img-w2" alt=""/>
+<p class="tuzhu"><b class="calibre1">图5-1　GoodSell公司在某一地区市场份额的预测分布</b></p>
+</div>
+<p class="bodycontent-1-fangsong">频率最高的预测由钟形曲线的顶点所代表，市场份额为44%。西姆金可以看到，公司的预测系统具有很高的噪声：如果所有预测都是正确的，那么这些预测应该相同。但事实上，这些预测值的分布很分散。</p>
+<p class="bodycontent-1-fangsong">我们可以给GoodSell预测系统中的噪声赋予一个数值。就像用秒表来测量间隔时间一样，我们可以计算这些预测的标准差。顾名思义，标准差表示一组数值偏离平均值的程度，在本例中为10%。对于每一个正态分布来说，大约2/3的预测值都落在偏离平均值正负一个标准差的范围内。本例指的是，约2/3的市场份额落在34%～54%这一范围内。西姆金现在获得了一个关于市场份额噪声的评估数据。需要提醒读者的是，为了获得更加稳健的评估，更好的噪声审查可以使用几个预测问题，但此处有一个问题就够了。</p>
+<p class="bodycontent-1-fangsong">在第2章中，关于真实保险公司高管的案例也是如此。西姆金感到非常震惊，并决定采取措施。令人难以接受的噪声程度表明，预测师没有遵循他们应该遵循的程序。西姆金要求公司领导雇用一个噪声顾问来监督预测师的工作，从而提升他们的一致性。可惜，她的要求并未得到批准。领导的回复似乎也很合理：“当我们不知道自己的预测是对是错的时候，如何能够减少错误？如果平均起来错误很大（即存在一个较大的偏差），那它是一个需要尽快解决的问题。”最后，领导得出结论：GoodSell先需要确认这些预测师的预测是对是错，然后再谈改善预测品质的措施。</p>
+<p class="bodycontent-1-fangsong">在那次噪声审查的一年后，预测师们所预测内容的真实结果出来了。目标地区的市场份额实际为34%。现在我们知道了每一位预测师的误差程度，即他们的预测值与实际结果之间的差异。如果预测值是34%，那么误差是0；如果预测值是44%，那么误差是10%；而对于很低的预测值24%，误差为-10%。</p>
+<p class="bodycontent-1-fangsong">图5-2显示的是误差分布情况。它和图5-1中的预测曲线相同，不同的只是它的每一个数据点表示了将图5-1中相应的预测值减去真实值（34%）后的差。分布的形态没有改变，而且误差分布的标准差（我们对预测误差本身的噪声的测量结果）仍然是10%。</p>
+<div class="chatu_img">
+<img src="../images/00007.jpeg" class="pic-img-w2" alt=""/>
+<p class="tuzhu"><b class="calibre1">图5-2　GoodSell对某一地区市场份额预测中的误差分布</b></p>
+</div>
+<p class="bodycontent-1-fangsong">观察图5-1和图5-2之间的差异，就像图0-1和图0-2中从正面和隐去靶子观察射击规律之间的差异。在考察射击故事中的噪声时，我们无须知道靶子的位置，同样，知道真实结果对于预测噪声也无任何助益。</p>
+<p class="bodycontent-1-fangsong">西姆金和她的领导现在知道了一些他们以前不知道的信息：预测的偏差数量。偏差是误差的平均值，在本例中是10%。因此，偏差和噪声在此案例的数据集中是一个相同的数字。（需要说明的是，噪声和偏差相等不是普遍的情况，但采用一个噪声和偏差相等的案例有助于读者理解它们各自的作用。）我们可以看到，大部分预测师都犯了过度乐观的错误，他们高估了公司可能获得的市场份额，大部分人的预测都落在了0误差线的右侧。事实上，结合该正态分布曲线的属性来看，大约84%的预测都高估了实际的市场份额。</p>
+<p class="bodycontent-1-fangsong">面对上述结果，西姆金的领导自鸣得意地认为自己是对的，这些预测中存在着大量偏差！减少偏差固然是一件好事，但西姆金还是想知道，一年前的提议是明智的吗？就目前而言，再次提出减少噪声仍然明智吗？相比于减少偏差，减少噪声的意义是什么呢？</p>
+<h3 class="txtheading" id="isbn9787572221354_2_11_1_2">均方，衡量整体误差的精确规则</h3>
+<p class="bodycontent-1-fangsong">为了回答西姆金的问题，我们需要一个关于误差的评分规则，即对个体误差赋予不同权重并将其整合成测量总体误差的一个指标。幸运的是，这种工具确实存在，那就是<a id="z1_43" href="part0084.html#zs1_43">“最小平方法”（method of least squares，也叫“最小二乘法”），它是由德国数学家高斯于1795年发明的</a>。高斯是举世闻名的数学天才，生于1777年。他在十几岁时就做出了多项重大贡献。</p>
+<p class="bodycontent-1-fangsong">高斯提出了一种方法，用于评估单个误差对总体误差的影响。他在测量总体误差时，使用的是“均方误差”（Mean Squared Error，MSE），即个体误差平方的平均值。</p>
+<p class="bodycontent-1-fangsong">详细探讨高斯对总体误差的测量超出了本书的讨论范畴，而且他的解决方案并非直观易懂。为什么用均方呢？这是一个听起来有些奇怪的概念，但它建立在我们几乎所有的直觉上。</p>
+<p class="bodycontent-1-fangsong">为了弄明白其中的原因，让我们来看一个看上去似乎完全不同但其实本质相同的问题。想象一下，你用一把尺子来测量一条线段的长度，要求精确到毫米，并且你可以测量5次。测量结果分别用图5-3中指向下方的三角箭头表示。</p>
+<div class="chatu_img">
+<img src="../images/00008.jpeg" class="pic-img-w3" alt=""/>
+<p class="tuzhu"><b class="calibre1">图5-3　对同一线段长度的5次测量结果</b></p>
+</div>
+<p class="bodycontent-1-fangsong">正如你看到的，5次测量结果都在971～980毫米这一范围内。那么，哪一个是对这条线段的最精确测量呢？一个可能是中位数，即两个最短的测量结果和两个最长的测量结果之间的那个测量结果，在本例中为973毫米。另一种可能是算术平均值，通常被称为平均值，在本例中为975毫米（图5-3中指向上方的三角箭头）。你可能倾向于认为平均值更为精确，你的直觉是对的。平均值包含更多信息，它受测量次数的影响，而中位数只受顺序的影响。</p>
+<p class="bodycontent-1-fangsong">我们对实现最佳评估这一问题有很清晰的直觉，它与我们关注的对总体误差的测量关系紧密。它们实际上是同一个问题的两面，因为最佳评估能够使当前测量的总体误差最小化。因此，如果你凭直觉认为平均值是最佳测量结果，并且你的直觉没有错的话，那么用于测量总体误差的公式应该能够产生算术平均值，因为算术平均值的误差是最小的。</p>
+<p class="bodycontent-1-fangsong">均方误差就具有这样的特征，它是唯一能够对总体误差进行测量的概念。在图5-4中，我们假定线段的真实长度有10个可能的整数值，进而计算5次测量的均方误差。例如，如果真实值是971毫米，那么5次测量的误差就分别是0、1、2、8和9。这些误差的平方之和为150，均方为30。这是一个很大的数值，表明一些测量值离真实值很远。你会看到，当测量值接近975（平均值）时，均方误差会下降。随着测量值远离平均值，均方误差又会逐渐增加。<b class="calibre1">可见，平均值是最佳评估结果，因为在这种情况下总体误差最小。</b></p>
+<div class="chatu_img">
+<img src="../images/00009.jpeg" class="pic-img-w3" alt=""/>
+<p class="tuzhu"><b class="calibre1">图5-4　10个可能的真实值对应的均方误差</b></p>
+</div>
+<p class="bodycontent-1-fangsong">你还会发现，当你的评估值远离平均值时，总体误差会迅速增加。例如，当你的评估值仅仅增加3毫米，如从976变化到979，均方误差就会翻倍。这是均方误差的关键特征：相比于小的误差，平方给大的误差赋予了更大的权重。</p>
+<p class="bodycontent-1-fangsong">现在你应该明白了为什么高斯用于测量总体误差的公式被称为均方误差计算公式，以及这种评估方法为什么被称为最小平方法。对误差进行平方是其核心思想，其他任何公式都无法与我们的直觉——平均数是最佳评估值如此契合。</p>
+<p class="bodycontent-1-fangsong">高斯的方法很快得到其他数学家的认可。作为其众多伟大成就之一，高斯用他的均方误差方法及其他数学创新解决了一大难题——重新发现谷神星（Ceres）。在此之前，这颗小行星只在1801年被短暂地追踪到，之后便消失于太阳眩光中。高斯对这一问题的解决方案优于当时欧洲最好的天文学家。这些天文学家一直想方设法估算谷神星的轨道，然而他们测量望远镜误差的方法是错误的，这颗行星根本没有在他们预测的任何地点附近出现。高斯用最小平方法重新进行了计算，当天文学家用望远镜对准高斯所预测的地点时，他们发现了谷神星！</p>
+<p class="bodycontent-1-fangsong">不同领域的科学家很快就开始普遍采用最小平方法来评估误差。两个多世纪过去了，当想要达到准确测量的目标时，最小平方法仍然是评估误差的标准方法。用平方来赋予误差权重是统计学的核心。在绝大部分科学领域的应用中，均方误差方法处于绝对优势地位。正如我们将看到的，这一方法具有极高的应用价值。</p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">单次测量中的误差</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">=</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">偏差</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">+</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">噪声误差</b></p>
+<p class="noindent-bodycontent-1-c-top"><b class="calibre1">Error in a single measurement</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">=</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">Bias</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">+</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">Noisy Error</b></p>
+<h3 class="txtheading" id="isbn9787572221354_2_11_1_3">误差方程：无论偏差大小如何，减少噪声都有益处</h3>
+<p class="bodycontent-1-fangsong">偏差和噪声在误差中的作用很容易概括为两个表达式，我们将其称为误差方程。第一个误差方程将单次测量中的误差分解为你现在熟悉的两个部分：偏差（平均误差）和残留的“噪声误差”。</p>
+<p class="bodycontent-1-fangsong">如果误差比偏差大，那么噪声误差是正的，反之则为负。噪声误差的平均数为0。这个误差方程并未提供什么新的信息。</p>
+<p class="bodycontent-1-fangsong">第二个误差方程是对均方误差，即我们之前介绍的对总体误差测量的分解。均方误差可以简单表示为偏差和噪声的平方和。（回想一下，噪声是测量的标准差，它与噪声误差的标准差相同。）</p>
+<p class="bodycontent-1-fangsong">下面的方程（两个平方之和）可能会让你想起一个学生时代常用的定理——勾股定理。或许你还记得，在一个直角三角形中，两条直角边长的平方和等于斜边长的平方。因此，误差方程式就更直观了，其中均方误差、偏差的平方和噪声的平方类似于直角三角形的三条边各自的平方。图5-5表明均方误差（黑色方块区域）的面积等于另外两个方块区域的面积之和。左图中噪声多于偏差，右图中偏差多于噪声。然而，两种情况的均方误差是相同的，均方误差的分解方程在这两种情况下都成立。</p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1"><a id="z1_44" href="part0084.html#zs1_44">总体误差（均方误差）</a></b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">=</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">偏差<sup class="calibre6">2</sup></b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">+</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">噪声<sup class="calibre6">2</sup></b></p>
+<p class="noindent-bodycontent-1-c-top"><b class="calibre1">Overall Error（MSE）</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">=</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">Bias<sup class="calibre6">2</sup></b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">+</b></p>
+<p class="noindent-bodycontent-1-c"><b class="calibre1">Noise<sup class="calibre6">2</sup></b></p>
+<div class="chatu_img">
+<img src="../images/00010.jpeg" class="pic-img-w4" alt=""/>
+<p class="tuzhu"><b class="calibre1">图5-5　均方误差的两种分解情形</b></p>
+</div>
+<p class="bodycontent-1-fangsong">正如上面的数学公式以及图5-5所示，偏差和噪声在误差方程中扮演了类似的角色，它们虽彼此独立，但被赋予了相同的权重。需要注意的是，在随后的章节中，我们在分析噪声的成分时也会用类似的平方和分解的方式。</p>
+<p class="bodycontent-1-fangsong">误差方程解答了西姆金提出的问题。<b class="calibre1">同等程度地减少噪声和偏差，对总体误差会产生什么影响？答案很明显：在误差方程中，偏差和噪声可以互换，因此无论是减少噪声还是减少偏差，对减少总体误差而言意义是一样的。</b>在图5-2中，偏差和噪声刚好相等（都是10%），因而它们对总体误差的影响是等同的。</p>
+<p class="bodycontent-1-fangsong">误差方程表明，西姆金最初想减少噪声的想法是正确的。无论你何时发现噪声，你都需要想尽办法减少它。这一方程表明，西姆金的领导所认为的“GoodSell应该在预测中的偏差的测量结果出来之后，再去减少噪声”的观点是错误的。对于总体误差而言，噪声和偏差是独立的：<b class="calibre1">无论偏差的大小如何，减少噪声都有益处。</b></p>
+<p class="bodycontent-1-fangsong">这个结论虽然很违反直觉，但非常重要。为了说明这一点，图5-6表明了减少相同数量的噪声和偏差所产生的效果。为了帮助你理解下图中左右两图的内容，最初的误差分布（来自图5-2）用虚线表示。</p>
+<div class="chatu_img">
+<img src="../images/00011.jpeg" class="pic-img-w2" alt=""/>
+<p class="tuzhu"><b class="calibre1">图5-6　偏差减半（A）与噪声减半（B）时的误差分布情况</b></p>
+</div>
+<p class="bodycontent-1-fangsong">在图5-6的图A中，我们假设西姆金的领导决定采用自己的方式：他发现了偏差，随后决定将其减半，如通过向过于乐观的预测师提供反馈的方式。他未对噪声采取任何措施。这种改进的效果是显而易见的：预测的总体分布更接近真实值了。</p>
+<p class="bodycontent-1-fangsong">在图5-6的图B中，我们可以看到，如果西姆金的提议获得了领导的批准，其结果将会是：偏差没有改变，噪声减半。看似矛盾的是，噪声的减少似乎使问题变得更严重了——预测更加集中了（更少的噪声），而不是更准确了（并未减少偏差）。84%的预测落入真实值的一侧，几乎所有（98%）的预测都错误地高估了真实值。减少噪声似乎使预测更加不准确了——这肯定不是西姆金所希望的！</p>
+<p class="bodycontent-1-fangsong">尽管看上去如此，但图5-6的图B中的总体误差和图5-6的图A中的总体误差减少的数量是一样的。图5-6的图B中情况变得更糟的错觉源自对偏差的错误直觉。测量偏差的目的并不是测量正误差和负误差之间的不平衡，而是测量平均误差，即钟形曲线的顶点与真实值之间的距离。在图5-6的图B中，这一平均误差与原始情境相比并无差异——它仍然很高，占10%，但并没有更糟糕。的确，偏差变得更加显著，因为它占了总体误差中更大的部分——80%而不是50%，但这是因为噪声减小了。相反，在图5-6的图A中，偏差减少了而噪声没有。最终的结果是，图5-6的图A和图5-6的图B中的均方误差相同，也就是说，减少噪声和减少相同数量的偏差对均方误差的影响是相同的。</p>
+<p class="bodycontent-1-fangsong">正如本案例所示，均方误差与我们对预测性判断进行评分的一般直觉相冲突。为了最小化均方误差，你需要尽可能避免大的误差。例如，如果你在测量长度，那么将误差从11厘米减少到10厘米的效果是将误差从1厘米减少至完全消失的效果的21倍。可惜，<a id="z1_45" href="part0084.html#zs1_45">关于这一点人们的直觉恰恰相反</a>：人们非常渴望一次性把问题全部解决，对小的误差高度敏感，但对两个大的误差之间的差异不敏感。即使你真心相信你的目标在于获得准确的判断，但你对结果的直觉反应与基于科学计算的准确性并不完全匹配。</p>
+<p class="bodycontent-1-fangsong">当然，最佳的解决办法是既减少噪声，也减少偏差。既然偏差和噪声是彼此独立的，那就没有必要在西姆金和其领导的方案之间二选一。因此，如果GoodSell决定减少噪声，而减少噪声又可以使偏差更加清晰明了，那么这种选择就是正确的。也就是说，这确实是一件好事。减少噪声可以帮助公司进一步减少偏差。</p>
+<p class="bodycontent-1-fangsong">然而，如果偏差远远大于噪声，那么减少噪声就不再是首要问题。GoodSell的例子给了我们另一个值得重视的教训。在上述简化的模型中，我们假定噪声和偏差是等同的。从误差方程来看，它们对总体误差的影响也是等同的：偏差和噪声各贡献了总体误差的50%。然而，正如我们所注意到的，84%的分析师会在同一个方向上犯错。如此之大的偏差（7个人中约有6个人朝同一个方向犯错）才产生了与噪声一样大的效果，因此在一些噪声比偏差更多的情境中，我们发现更大的误差就不足为奇了。</p>
+<p class="bodycontent-1-fangsong">我们在上文中用单个案例展示了误差方程的应用，这个案例就是预测GoodSell在某一地区的市场份额。当然，人们总是希望在多个案例中进行一次性噪声审查，方法是相同的：用误差方程计算各个案例的均方误差，然后对它们取平均值。均方误差就是偏差平方与噪声平方之和。对于西姆金而言，如果能得到多个地区的多个预测数据就更好了，无论它们是相同还是不同的预测师做出的预测。这些平均值能够让她对GoodSell的预测系统偏差和噪声有一个更清晰的认识。</p>
+<h3 class="txtheading" id="isbn9787572221354_2_11_1_4">噪声的代价</h3>
+<p class="bodycontent-1-fangsong">误差方程是本书的思想基础，它为减少预测性判断中的系统噪声提供了理论依据。原则上，减少预测性判断中的系统噪声这一目标与减少统计偏差同样重要。需要强调的是，统计偏差不是社会歧视的代名词，它只是一组判断中的平均误差。</p>
+<p class="bodycontent-1-fangsong">误差方程和我们从中获得的结论均有赖于用均方误差来测量总体误差。这一规则适用于纯粹的预测性判断，包括预测和评估，它们都力求以最大的精度（最小的偏差）和最高的准确性（最小的噪声）来接近真实值。</p>
+<p class="bodycontent-1-fangsong">然而，误差方程不适用于评估性判断，因为误差取决于真实值的存在，故而很难应用于评估性判断。此外，即使我们可以确定评估性判断中的误差，其代价也不太可能与它们的平方成正比。</p>
+<p class="bodycontent-1-fangsong">例如，对于一家制造电梯的公司而言，评估一架电梯的最大负载的误差显然是不对称的：虽然低估意味着一定的代价，但高估可能会引发灾难。误差平方也不能用于评估“什么时候出发去赶火车”这样的决定，因为晚1分钟和晚5分钟的后果是一样的。在第2章中，当保险公司在为其保单估价或估计理赔额时，两个方向的错误都需要付出代价，但同样没有理由假定这两个的代价是对等的。</p>
+<p class="bodycontent-1-fangsong">上述这些例子充分表明：需要明确预测性判断和评估性判断在决策中所起的作用。关于良好决策，一个得到普遍认可的准则是：不应混淆自己的价值判断和事实。决策需要根据客观、精确的预测性判断做出，这些判断不应受到你的希望与恐惧、偏好与价值取向的影响。对于电梯公司而言，第一步是利用不同的技术解决方案对电梯的最大技术负载进行客观计算。安全性仅仅在第二步才需要被重点关注，即根据不同的安全边际来设定最大负载时。可以肯定的是，该选择在很大程度上取决于事实判断，诸如设置不同安全边际的代价与收益。同样，决定何时出发去火车站的第一步应该由客观的旅行时间决定，至于错过火车的代价和提前到火车站所浪费的时间，只有在你需要决定甘愿冒多大风险时才成为你需要考虑的因素。</p>
+<p class="bodycontent-1-fangsong">同样的逻辑适用于会产生更严重后果的决策。在决定是否发动军事进攻时，指挥官需要权衡一系列因素，但他依赖的最重要信息是预测性判断。政府官员在对公共健康危机做出回应时，需要权衡不同选项的优势和劣势，如果缺少对每一选项的可能后果的准确预测，这种评估就无法完成。</p>
+<p class="bodycontent-1-fangsong">在所有这些案例中，最终的决策都需要进行评估性判断。决策者需要考虑多种选项，并根据其价值做出最佳选择。但决策取决于潜在的预测，而这种预测应该是价值中立的。他们的目标是精确性（尽可能击中靶心），均方误差是测量误差的恰当手段。我们可以通过减少噪声来改善预测性判断，如果这样做不会大幅增加偏差的话。</p>
+
+
+  </div>
+
+  
+  <div class="calibreToc">
+    <h2><a href="../../ap00gc99.html">Table of contents
+</a></h2>
+    <div>
+  <ul>
+    <li>
+      <a href="part0000.html#0-28f3a0ae199c4dd8958a0ce974a20c1e">版权页</a>
+    </li>
+    <li>
+      <a href="part0001.html#UGI0-28f3a0ae199c4dd8958a0ce974a20c1e">献词</a>
+    </li>
+    <li>
+      <a href="part0002.html#1T140-28f3a0ae199c4dd8958a0ce974a20c1e">重磅赞誉</a>
+    </li>
+    <li>
+      <a href="part0003.html#2RHM0-28f3a0ae199c4dd8958a0ce974a20c1e">测一测 如何做一个聪明的决策者？</a>
+    </li>
+    <li>
+      <a href="part0004.html#3Q280-28f3a0ae199c4dd8958a0ce974a20c1e">推荐序1 在无法回避噪声的世界，更好地追求高级境界与极致效益</a>
+    </li>
+    <li>
+      <a href="part0005.html#4OIQ0-28f3a0ae199c4dd8958a0ce974a20c1e">推荐序2 穿越噪声的决策</a>
+    </li>
+    <li>
+      <a href="part0006.html#5N3C0-28f3a0ae199c4dd8958a0ce974a20c1e">中文版序 哪里有判断，哪里就有噪声</a>
+    </li>
+    <li>
+      <a href="part0007.html#6LJU0-28f3a0ae199c4dd8958a0ce974a20c1e">目录</a>
+    </li>
+    <li>
+      <a href="part0008.html#7K4G0-28f3a0ae199c4dd8958a0ce974a20c1e">引言 偏差与噪声，人类判断的两类错误</a>
+    </li>
+    <li>
+      <a href="part0009.html#8IL20-28f3a0ae199c4dd8958a0ce974a20c1e">第一部分 寻找噪声</a>
+      <ul>
+        <li>
+          <a href="part0011.html#AFM60-28f3a0ae199c4dd8958a0ce974a20c1e">第1章 犯罪和充满噪声的判罚</a>
+        </li>
+        <li>
+          <a href="part0013.html#CCNA0-28f3a0ae199c4dd8958a0ce974a20c1e">第2章 系统噪声，给人达成一致的错觉</a>
+        </li>
+        <li>
+          <a href="part0015.html#E9OE0-28f3a0ae199c4dd8958a0ce974a20c1e">第3章 单一决策，仅发生一次的重复决策</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="part0017.html#G6PI0-28f3a0ae199c4dd8958a0ce974a20c1e">第二部分 你的大脑是一种测量工具</a>
+      <ul>
+        <li>
+          <a href="part0019.html#I3QM0-28f3a0ae199c4dd8958a0ce974a20c1e">第4章 什么是判断</a>
+        </li>
+        <li>
+          <a href="part0021.html#K0RQ0-28f3a0ae199c4dd8958a0ce974a20c1e">第5章 测量误差，噪声与偏差的代价一样大</a>
+        </li>
+        <li>
+          <a href="part0023.html#LTSU0-28f3a0ae199c4dd8958a0ce974a20c1e">第6章 噪声分析：所有判断都存在3类噪声</a>
+        </li>
+        <li>
+          <a href="part0025.html#NQU20-28f3a0ae199c4dd8958a0ce974a20c1e">第7章 情境噪声，无时无刻不在影响着我们的判断</a>
+        </li>
+        <li>
+          <a href="part0027.html#PNV60-28f3a0ae199c4dd8958a0ce974a20c1e">第8章 群体是如何放大噪声的</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="part0029.html#RL0A0-28f3a0ae199c4dd8958a0ce974a20c1e">第三部分 预测性判断中的噪声</a>
+      <ul>
+        <li>
+          <a href="part0031.html#TI1E0-28f3a0ae199c4dd8958a0ce974a20c1e">第9章 判断与模型，简单的模型普遍优于人类判断</a>
+        </li>
+        <li>
+          <a href="part0033.html#VF2I0-28f3a0ae199c4dd8958a0ce974a20c1e">第10章 无噪声的规则</a>
+        </li>
+        <li>
+          <a href="part0035.html#11C3M0-28f3a0ae199c4dd8958a0ce974a20c1e">第11章 哪里有预测，哪里就有客观无知</a>
+        </li>
+        <li>
+          <a href="part0037.html#1394Q0-28f3a0ae199c4dd8958a0ce974a20c1e">第12章 常态谷：事情虽无法预测，但可以被理解</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="part0039.html#1565U0-28f3a0ae199c4dd8958a0ce974a20c1e">第四部分 噪声是如何产生的</a>
+      <ul>
+        <li>
+          <a href="part0041.html#173720-28f3a0ae199c4dd8958a0ce974a20c1e">第13章 启发式、偏差与噪声</a>
+        </li>
+        <li>
+          <a href="part0043.html#190860-28f3a0ae199c4dd8958a0ce974a20c1e">第14章 匹配，找到与你的预测最精准匹配的共识</a>
+        </li>
+        <li>
+          <a href="part0045.html#1AT9A0-28f3a0ae199c4dd8958a0ce974a20c1e">第15章 选取精确的量表，并多用相对判断</a>
+        </li>
+        <li>
+          <a href="part0047.html#1CQAE0-28f3a0ae199c4dd8958a0ce974a20c1e">第16章 模式噪声的构成</a>
+        </li>
+        <li>
+          <a href="part0049.html#1ENBI0-28f3a0ae199c4dd8958a0ce974a20c1e">第17章 噪声源，偏差是引人注目的图形，而噪声是不受我们关注的背景</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="part0051.html#1GKCM0-28f3a0ae199c4dd8958a0ce974a20c1e">第五部分 决策卫生，提升五大人类判断力</a>
+      <ul>
+        <li>
+          <a href="part0053.html#1IHDQ0-28f3a0ae199c4dd8958a0ce974a20c1e">第18章 卓越的判断者，卓越的判断力</a>
+        </li>
+        <li>
+          <a href="part0055.html#1KEEU0-28f3a0ae199c4dd8958a0ce974a20c1e">第19章 消除偏差与决策卫生</a>
+        </li>
+        <li>
+          <a href="part0057.html#1MBG20-28f3a0ae199c4dd8958a0ce974a20c1e">第20章 司法科学，信息排序是最大的噪声</a>
+        </li>
+        <li>
+          <a href="part0059.html#1O8H60-28f3a0ae199c4dd8958a0ce974a20c1e">第21章 甄选与汇总，超级预测的两大策略</a>
+        </li>
+        <li>
+          <a href="part0061.html#1Q5IA0-28f3a0ae199c4dd8958a0ce974a20c1e">第22章 医疗决策，用科学的诊断指南减少噪声</a>
+        </li>
+        <li>
+          <a href="part0063.html#1S2JE0-28f3a0ae199c4dd8958a0ce974a20c1e">第23章 绩效评估，用基于外部视角的共识框架做出量化判断</a>
+        </li>
+        <li>
+          <a href="part0065.html#1TVKI0-28f3a0ae199c4dd8958a0ce974a20c1e">第24章 人员招聘，以结构化指标衡量人才</a>
+        </li>
+        <li>
+          <a href="part0067.html#1VSLM0-28f3a0ae199c4dd8958a0ce974a20c1e">第25章 中介评估法，做出明智决策的核心方法</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="part0069.html#21PMQ0-28f3a0ae199c4dd8958a0ce974a20c1e">第六部分 最佳的噪声水平</a>
+      <ul>
+        <li>
+          <a href="part0071.html#23MNU0-28f3a0ae199c4dd8958a0ce974a20c1e">第26章 减少噪声的成本</a>
+        </li>
+        <li>
+          <a href="part0073.html#25JP20-28f3a0ae199c4dd8958a0ce974a20c1e">第27章 尊严，人之为人的重要价值观</a>
+        </li>
+        <li>
+          <a href="part0075.html#27GQ60-28f3a0ae199c4dd8958a0ce974a20c1e">第28章 规则还是标准</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="part0077.html#29DRA0-28f3a0ae199c4dd8958a0ce974a20c1e">回顾与总结 正视噪声问题</a>
+    </li>
+    <li>
+      <a href="part0078.html#2ACBS0-28f3a0ae199c4dd8958a0ce974a20c1e">结语 一个噪声很少的世界</a>
+    </li>
+    <li>
+      <a href="part0079.html#2BASE0-28f3a0ae199c4dd8958a0ce974a20c1e">附录1 如何进行噪声审查</a>
+    </li>
+    <li>
+      <a href="part0080.html#2C9D00-28f3a0ae199c4dd8958a0ce974a20c1e">附录2 决策观察者检查清单</a>
+    </li>
+    <li>
+      <a href="part0081.html#2D7TI0-28f3a0ae199c4dd8958a0ce974a20c1e">附录3 对抗噪声，修正预测</a>
+    </li>
+    <li>
+      <a href="part0082.html#2E6E40-28f3a0ae199c4dd8958a0ce974a20c1e">致谢</a>
+    </li>
+    <li>
+      <a href="part0083.html#2F4UM0-28f3a0ae199c4dd8958a0ce974a20c1e">译者后记</a>
+    </li>
+    <li>
+      <a href="part0084.html#2G3F80-28f3a0ae199c4dd8958a0ce974a20c1e">注释</a>
+    </li>
+  </ul>
+</div>
+
+
+  </div>
+  
+
+  <div class="calibreEbNav">
+    
+      <a href="part0020.html" class="calibreAPrev">previous page
+</a>
+    
+
+    <a href="../../ap00gc99.html" class="calibreAHome">start
+</a>
+
+    
+      <a href="part0022.html" class="calibreANext">next page
+</a>
+    
+  </div>
+
+</div>
+
+</body>
+</html>
