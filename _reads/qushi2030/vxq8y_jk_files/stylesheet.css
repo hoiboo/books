@@ -1,0 +1,320 @@
+.author {
+  display: block;
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2em;
+  text-align: center;
+  text-indent: 0;
+}
+.bodypic {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.bookauthor {
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 1em;
+  text-align: center;
+}
+.booktitle {
+  color: #0972CD;
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1.54839em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 2em;
+  text-align: center;
+}
+.calibre {
+  display: block;
+  font-size: 1.29167em;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.calibre1 {
+  height: auto;
+  width: 50%;
+}
+.calibre2 {
+  height: auto;
+  width: 80%;
+}
+.calibre3 {
+  border-bottom-color: currentColor;
+  border-bottom-style: inset;
+  border-bottom-width: 1px;
+  border-left-color: currentColor;
+  border-left-style: inset;
+  border-left-width: 1px;
+  border-right-color: currentColor;
+  border-right-style: inset;
+  border-right-width: 1px;
+  border-top-color: currentColor;
+  border-top-style: inset;
+  border-top-width: 1px;
+  color: gray;
+  display: block;
+  height: 2px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+.center {
+  display: block;
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: center;
+  text-indent: 0;
+}
+.content {
+  display: block;
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+.contents {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-left: 0;
+  text-align: justify;
+}
+.contents-title {
+  display: block;
+}
+.contents1 {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-left: 2em;
+  text-align: justify;
+}
+.copyright-text {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+}
+.copyright-title {
+  color: #c1a173;
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1.41935em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  text-align: center;
+  text-indent: 0;
+}
+.firsttitle {
+  color: #0972CD;
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1.41935em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  text-align: left;
+  text-indent: 0;
+}
+.firsttitle-l {
+  color: #0972CD;
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1.41935em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.3em;
+  text-align: left;
+  text-indent: 0;
+}
+.firsttitle1 {
+  color: #0972CD;
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1.41935em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  text-align: left;
+  text-indent: 0;
+}
+.imgdescript {
+  display: block;
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 0.77419em;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.3em;
+  text-align: center;
+  text-indent: 0;
+}
+.imgdescript-b {
+  display: block;
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 0.77419em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.3em;
+  text-align: center;
+  text-indent: 0;
+}
+.imgdescript-l {
+  display: block;
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 1em;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.3em;
+  text-align: left;
+  text-indent: 2em;
+}
+.preface {
+  display: block;
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.3em;
+  text-indent: 2em;
+}
+.qrbodypic {
+  display: block;
+  font-size: 1em;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  text-align: center;
+}
+.quotation-s {
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 1em;
+  line-height: 1.618em;
+}
+.quotation-s1 {
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 1em;
+  line-height: 1.618em;
+}
+.right-info {
+  display: block;
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 1em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: right;
+}
+.secondtitle {
+  color: #0972CD;
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1.29032em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  text-indent: 0;
+}
+.subhead {
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1.29032em;
+  line-height: 1.2;
+  margin-bottom: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  text-align: left;
+  text-indent: 0;
+}
+.subhead-l {
+  color: #6b6441;
+  display: block;
+  font-family: "MYing Hei S", Hei;
+  font-size: 1.29032em;
+  line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.super {
+  font-size: 0.77419em;
+  vertical-align: super;
+}
+.titlequot {
+  color: #0972CD;
+  display: block;
+  font-family: STKai, "MKai PRC", Kai;
+  font-size: 1.29032em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+.vertical-middle {
+  display: block;
+  padding-top: 5px;
+}
