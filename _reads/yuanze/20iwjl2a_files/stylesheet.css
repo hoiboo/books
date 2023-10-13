@@ -55,15 +55,15 @@
 }
 .calibre6 {
   display: block;
-  font-size: 1.29167em;
+  font-size: 1em;
   letter-spacing: 0;
-  line-height: 1.5em;
+  line-height: 1em;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
   margin-top: 1em;
   text-align: justify;
-  text-indent: 2em;
+  text-indent: 1.5em;
   text-justify: inter-ideograph;
 }
 .calibre7 {
@@ -81,7 +81,7 @@
 }
 .calibre8 {
   display: block;
-  font-size: 1.66667em;
+  font-size: 1.5em;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 0.5em;
@@ -93,9 +93,9 @@
 }
 .calibre9 {
   display: block;
-  font-size: 1.29167em;
+  font-size: 1.1em;
   letter-spacing: 0;
-  line-height: 1.5em;
+  line-height: 1.2em;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -466,9 +466,9 @@ sup{
 }
 .noindent {
   display: block;
-  font-size: 1.29167em;
+  font-size: 1.1em;
   letter-spacing: 0;
-  line-height: 1.5em;
+  line-height: 1.2em;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
