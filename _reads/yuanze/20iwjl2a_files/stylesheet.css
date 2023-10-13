@@ -19,18 +19,18 @@
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 2em;
+  margin-top: 0.2em;
   text-align: center;
   text-indent: 0;
 }
 .calibre2 {
   display: block;
-  font-size: 2em;
-  line-height: 1.2;
-  margin-bottom: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  margin-top: 0.5em;
+  font-size: 1.6em;
+  line-height: 1;
+  margin-bottom: 0.2em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  margin-top: 0.2em;
 }
 .calibre3 {
   display: block;
@@ -343,7 +343,7 @@ sup{
   left: 0%;
   margin-left: 0%;
   margin-top: 2em;
-  position: absolute;
+  /** position: absolute; **/
   text-align: center;
   width: 100%;
 }
@@ -510,7 +510,7 @@ sup{
 .shuming {
   display: block;
   font-family: songti;
-  padding-top: 30%;
+  /** padding-top: 30%; **/
   text-align: center;
   text-indent: 0;
 }
