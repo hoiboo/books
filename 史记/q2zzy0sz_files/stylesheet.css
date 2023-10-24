@@ -1,0 +1,215 @@
+rt{
+  display: none;
+  visibility: hidden;
+}
+.calibre {
+  display: block;
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: justify;
+}
+.calibre1 {
+  color: #00C;
+}
+.calibre2 {
+  display: block;
+}
+.calibre3 {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+.calibre4 {
+  display: block;
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.kindle-cn-bodycontent-div-alone {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+.kindle-cn-bodycontent-image-alone {
+  height: auto;
+  margin-bottom: -0.5em;
+  width: 100%;
+}
+.kindle-cn-bodycontent-image-alone1 {
+  height: auto;
+  margin-bottom: -0.5em;
+  width: 80%;
+}
+.kindle-cn-bodycontent-image-alone50-withnote {
+  height: auto;
+  margin-bottom: 0;
+  width: 50%;
+}
+.kindle-cn-bodycontent-image-alone60-withnote {
+  height: auto;
+  margin-bottom: 0;
+  width: 60%;
+}
+.kindle-cn-bodycontent-image-alone70-withnote {
+  height: auto;
+  margin-bottom: 0;
+  width: 70%;
+}
+.kindle-cn-bodycontent-image-alone80-withnote {
+  height: auto;
+  margin-bottom: 0;
+  width: 80%;
+}
+.kindle-cn-bold {
+  font-weight: bold;
+}
+.kindle-cn-copyright-text {
+  display: block;
+  line-height: 1.618em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: 0;
+}
+.kindle-cn-frame-zhijiao {
+  border-bottom-color: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #000;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #000;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #000;
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+}
+.kindle-cn-heading {
+  border-bottom-color: #c7c7c7;
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
+  border-top-color: #c7c7c7;
+  border-top-style: dashed;
+  border-top-width: 2px;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.67em;
+  padding-bottom: 0.75em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.75em;
+  text-align: center;
+  width: 100%;
+}
+.kindle-cn-heading1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.83em;
+  text-align: center;
+  width: 100%;
+}
+.kindle-cn-inline-image {
+  height: 1.2em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: middle;
+  width: auto;
+}
+.kindle-cn-inline-image1 {
+  height: 2em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: middle;
+  width: auto;
+}
+.kindle-cn-picture-txt-withfewcharactors {
+  display: block;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -0.3em;
+  text-align: center;
+  text-indent: 0;
+}
+.kindle-cn-picture-txt-withmanycharactors {
+  display: block;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -0.3em;
+  text-align: left;
+  text-indent: 0;
+}
+.kindle-cn-specialtext-kaiti {
+  font-size: 0.75em;
+}
+.kindle-cn-toc-level {
+  display: block;
+  margin-left: 0;
+}
+.kindle-cn-toc-level1 {
+  display: block;
+  margin-left: 2em;
+}
+.kindle-cn-toc-title {
+  border-bottom-color: #000;
+  border-bottom-style: dotted;
+  border-bottom-width: 1.5px;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.left {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: 2em;
+}
