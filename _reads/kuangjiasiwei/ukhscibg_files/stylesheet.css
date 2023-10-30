@@ -1,0 +1,339 @@
+sup{
+  display: none;
+  visibility: hidden;
+}
+.author-c {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 2.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: center;
+  text-indent: 0;
+}
+.bodytext {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: justify;
+  text-indent: 2em;
+}
+.bodytext-kt-margin {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  margin-bottom: 0.3em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  text-indent: 2em;
+}
+.bodytext-kt-np {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.3em;
+  text-indent: 2em;
+}
+.bodytext-kt-only-np {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  margin-bottom: 1.3em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.3em;
+  text-indent: 2em;
+}
+.bodytext-ss {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: right;
+}
+.bodytext-zh {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+.calibre {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.calibre1 {
+  font-size: 0.75em;
+  line-height: normal;
+  vertical-align: super;
+}
+.calibre2 {
+  display: block;
+  line-height: 1.2;
+}
+.calibre3 {
+  font-style: italic;
+}
+.calibre4 {
+  display: list-item;
+}
+.calibre5 {
+  font-size: 0.75em;
+  line-height: normal;
+  vertical-align: sub;
+}
+.calibre6 {
+  display: block;
+}
+.content-word-small {
+  font-size: 0.675em;
+  line-height: 1.2;
+}
+.footnote {
+  color: #696969;
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+}
+.inscribed-right {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 1.3em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: right;
+}
+.normal-ulist {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  list-style-type: disc;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+}
+.poem-center {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  text-align: center;
+  text-indent: 0;
+}
+.poem-center-first {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: center;
+  text-indent: 0;
+}
+.poem-center-last {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 1.3em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  text-align: center;
+  text-indent: 0;
+}
+.poem-center-margin {
+  display: block;
+  font-family: "STKaiti", "Kai", "楷体";
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: center;
+  text-indent: 0;
+}
+.poem-title {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.3em;
+  text-align: center;
+  text-indent: 0;
+}
+.preface-text {
+  display: block;
+  font-family: "STFangsong", "Fangsong", "仿宋";
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: 2em;
+}
+.preface-text1 {
+  display: block;
+  font-family: "STFangsong", "Fangsong", "仿宋";
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.3em;
+  margin-right: 0;
+  margin-top: 1em;
+  text-indent: -1.3em;
+}
+.sgc-toc-level {
+  display: block;
+  margin-left: 0;
+}
+.sgc-toc-level1 {
+  display: block;
+  margin-left: 2em;
+}
+.sgc-toc-title {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.text-title {
+  display: block;
+  font-size: 1.125em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.3em;
+  text-align: justify;
+}
+.text-title-1-r {
+  display: block;
+  font-size: 1.66667em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: right;
+}
+.text-title-2-c {
+  display: block;
+  font-size: 1.41667em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.5em;
+  text-align: center;
+}
+.text-title-2-c1 {
+  display: block;
+  font-size: 1.41667em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+.text-title-3-c {
+  display: block;
+  font-size: 1.41667em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.5em;
+  text-align: center;
+}
+.text-title1 {
+  display: block;
+  font-size: 1.41667em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: justify;
+}
+.text-title2 {
+  display: block;
+  font-size: 1.41667em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.5em;
+  text-align: justify;
+}
+.text-title3 {
+  display: block;
+  font-size: 1.66667em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: justify;
+}
+.title-zhonghei {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.3em;
+  text-indent: 2em;
+}
