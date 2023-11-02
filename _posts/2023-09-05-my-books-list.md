@@ -20,3 +20,5 @@ title: 我的书单
 
 ## 教程
  - [【JAVA官方】Java教程](https://docs.oracle.com/javase/tutorial/essential/index.html)
+ - [【JAVA官方】Java8语法](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
+
