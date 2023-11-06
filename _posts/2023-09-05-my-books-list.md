@@ -18,6 +18,11 @@ title: 我的书单
 
 - [JavaGuide(Java面试 + 学习指南)](https://javaguide.cn/)
 
+- [Elasticsearch分布式一致性原理剖析](https://developer.aliyun.com/profile/po22xpu44ryww)
+  - [一、节点篇](https://developer.aliyun.com/article/797309)
+  - [二、Meta篇](https://developer.aliyun.com/article/797307)
+  - [三、Data篇](https://developer.aliyun.com/article/797299)
+
 ## 教程
  - [【JAVA官方】Java教程](https://docs.oracle.com/javase/tutorial/essential/index.html)
  - [【JAVA官方】Java8语法](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
