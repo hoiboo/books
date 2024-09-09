@@ -1,0 +1,32 @@
+@page {
+  margin-bottom: 5pt;
+  margin-top: 5pt;
+}
+@font-face {
+  font-family: "zw";
+  src: local("zw"), local("st"), local("Song T"), local("SongTi"), local("Songti"), local("正文"), local("宋体"), local("明体"), local("明朝"), local("Songti"), local("Songti SC"), local("Songti TC"), local("STSongti"), local("STSong"), local("Song S"), local("Song T"), local("STBShusong"), local("TBMincho"), local("HYMyeongJo"), local("DK-SONGTI");
+  /*,
+  url(res:///fonts/normal/st),
+  url(res:///fonts/normal/SongTi);*/
+}
+@font-face {
+  font-family: "fs";
+  src: local("fs"), local("FangSong"), local("Fangsong"), local("仿宋"), local("仿宋_GB2312"), local("Yuanti"), local("Yuanti SC"), local("Yuanti TC"), local("STYuanti"), local("STYuan"), local("DK-FANGSONG");
+  /*,
+  url(res:///fonts/normal/fs),
+  url(res:///fonts/normal/FangSong);*/
+}
+@font-face {
+  font-family: "kt";
+  src: local("kt"), local("KaiTi"), local("Kaiti"), local("楷体"), local("楷体_GB2312"), local("Kaiti"), local("Kaiti SC"), local("Kaiti TC"), local("STKaiti"), local("STKai"), local("MKai PRC"), local("MKaiGB18030C-Medium"), local("MKaiGB18030C-Bold"), local("STKai"), local("DK-KAITI");
+  /*,
+  url(res:///fonts/normal/kt),
+  url(res:///fonts/normal/KaiTi);*/
+}
+@font-face {
+  font-family: "ht";
+  src: local("ht"), local("HeiTi"), local("Heiti"), local("微软雅黑"), local("黑体"), local("Heiti"), local("Heiti SC"), local("Heiti TC"), local("STHeiti"), local("STHei"), local("MYing Hei S"), local("MYing Hei T"), local("TBGothic"), local("DK-HEITI");
+  /*,
+  url(res:///fonts/normal/ht),
+  url(res:///fonts/normal/HeiTi);*/
+}
