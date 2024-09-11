@@ -152,6 +152,8 @@
   font-size: 0.77419em;
   line-height: 1.2;
   vertical-align: super;
+  display: none;
+  visibility: hidden;
 }
 .calibre18 {
   display: block;
