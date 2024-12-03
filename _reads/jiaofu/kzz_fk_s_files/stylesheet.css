@@ -1,0 +1,112 @@
+.calibre {
+  display: block;
+  font-size: 1.29167em;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.calibre1 {
+  display: block;
+  text-align: center;
+}
+.calibre2 {
+  height: auto;
+  width: auto;
+}
+.calibre3 {
+  display: block;
+}
+.calibre4 {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+}
+.calibre5 {
+  display: block;
+  font-family: STSong, "Song S", Song;
+  font-size: 1.29167em;
+  line-height: 1.618;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: justify;
+  text-indent: 2em;
+}
+.calibre6 {
+  display: block;
+  font-size: 1.54839em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.67em;
+}
+.calibre7 {
+  display: block;
+  font-size: 1.29032em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+}
+.calibre8 {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  text-align: center;
+}
+.calibre9 {
+  font-weight: bold;
+}
+.calibre10 {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.33em;
+}
+.calibre11 {
+  font-size: 1em;
+  line-height: 1.618;
+  text-indent: 2em;
+}
+.calibre12 {
+  display: block;
+  font-size: 1.41935em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.83em;
+}
+.sgc-toc-level {
+  display: block;
+  margin-left: 0;
+}
+.sgc-toc-level1 {
+  display: block;
+}
+.sgc-toc-title {
+  display: block;
+  font-size: 1.54839em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  text-align: center;
+}
