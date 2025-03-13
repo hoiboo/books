@@ -11,19 +11,17 @@ before_script:
 test:
   stage: test
   script:
-  - bundle exec jekyll build -d test
+    - bundle exec jekyll build -d test
   artifacts:
     paths:
-    - test
-  rules:
-    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
+      - test
 
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll build -d public
+    - bundle exec jekyll build -d _site
   artifacts:
     paths:
-    - public
-  rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+      - _site
+  only:
+    - dev
