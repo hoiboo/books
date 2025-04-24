@@ -14,6 +14,6 @@ for remote in "${remotes[@]}"; do
     IFS=' ' read -r -a remote_info <<< "$remote"
     remote_name="${remote_info[0]}"
     remote_branch="${remote_info[1]}"
-    echo "-- 开始 push $remote_name $remote_branch -----"
+    echo "-- 开始 push $remote_name $remote_branch (命令： git push $remote_name $local_branch:$remote_branch) -----"
     git push "$remote_name" "$local_branch:$remote_branch"
 done
