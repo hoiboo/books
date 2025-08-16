@@ -12,6 +12,7 @@ exclude: ["*.py"]
     
 # html 语言配置    
 lang: zh-CN
+encoding: UTF-8
 
 analysis:
   baiduhm:
