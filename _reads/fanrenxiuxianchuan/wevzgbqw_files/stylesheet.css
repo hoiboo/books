@@ -1,0 +1,370 @@
+.calibre {
+  display: block;
+  font-family: "DK-SONGTI", "st", "宋体", "zw", sans-serif;
+  font-size: 1em;
+  line-height: 130%;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-bottom: 0%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0%;
+  text-align: justify;
+}
+.calibre1 {
+  display: block;
+}
+.calibre2 {
+  border-bottom-color: currentColor;
+  border-bottom-style: inset;
+  border-bottom-width: 1px;
+  border-left-color: currentColor;
+  border-left-style: inset;
+  border-left-width: 1px;
+  border-right-color: currentColor;
+  border-right-style: inset;
+  border-right-width: 1px;
+  border-top-color: currentColor;
+  border-top-style: inset;
+  border-top-width: 1px;
+  color: gray;
+  display: block;
+  height: 2px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+.calibre3 {
+  display: block;
+  font-family: "zw";
+  line-height: 130%;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  text-align: justify;
+}
+.calibre4 {
+  font-family: "DK-KAITI", "kt", "楷体", "zw", serif;
+  font-size: 1.41667em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.calibre5 {
+  display: block;
+  font-family: "DK-SONGTI", "st", "宋体", "zw", sans-serif;
+  line-height: 130%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: justify;
+  text-indent: 2em;
+}
+.cp {
+  color: #412938;
+  display: block;
+  duokan-text-indent: 0;
+  font-family: "DK-CODE", "DK-XIHEITI", 细黑体, "xihei", sans-serif;
+  font-size: 0.75em;
+  line-height: 130%;
+  margin-bottom: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1em;
+  text-align: left;
+  text-indent: 0;
+}
+.head {
+  background-color: #000240;
+  color: #fff;
+  display: block;
+  font-family: "DK-SONGTI", "st", "宋体", "zw", sans-serif;
+  font-size: 1em;
+  line-height: 130%;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-bottom: 0%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0%;
+  text-align: justify;
+}
+.head1 {
+  display: block;
+  font-family: "DK-KAITI", "kt", "楷体", "zw", serif;
+  font-size: 1.125em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  text-align: center;
+  width: 1em;
+}
+.head2 {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #fff;
+  border-right-style: solid;
+  border-right-width: 1px;
+  display: block;
+  duokan-text-indent: 0;
+  font-family: "方正小标宋_GBK", "DK-XIAOBIAOSONG";
+  font-size: 1.41667em;
+  font-weight: bold;
+  line-height: 130%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 3px;
+  text-align: center;
+  text-indent: 0;
+  width: 1em;
+}
+.head3 {
+  display: block;
+  font-family: "方正小标宋_GBK", "DK-XIAOBIAOSONG";
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  text-align: center;
+}
+.line {
+  border-bottom-color: #A2906A;
+  border-bottom-style: dotted;
+  border-bottom-width: 0;
+  border-left-color: #A2906A;
+  border-left-style: dotted;
+  border-left-width: 0;
+  border-right-color: #A2906A;
+  border-right-style: dotted;
+  border-right-width: 0;
+  border-top-color: #A2906A;
+  border-top-style: dotted;
+  border-top-width: 1px;
+  color: gray;
+  display: block;
+  height: 2px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+.logo {
+  display: block;
+  duokan-text-indent: 0;
+  font-family: "zw";
+  line-height: 130%;
+  margin-bottom: 0;
+  margin-left: 3%;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  text-align: justify;
+  text-indent: 0;
+}
+.logo1 {
+  height: auto;
+  width: 40%;
+}
+.mark {
+  font-family: "方正小标宋_GBK", "DK-XIAOBIAOSONG";
+  font-size: 0.70588em;
+}
+.oval {
+  background-color: rgba(92, 92, 73, 0.6);
+  border-bottom-color: #20F2f0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #20F2f0;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #20F2f0;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #20F2f0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: block;
+  font-family: "zw";
+  line-height: 130%;
+  margin-bottom: 0;
+  margin-left: 10%;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  text-align: justify;
+}
+.ovalnote {
+  color: #E2DA9A;
+  display: block;
+  font-family: "DK-KAITI", sans-serif;
+  font-size: 0.75em;
+  line-height: 130%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+  text-indent: 2em;
+}
+.ovaltitle {
+  color: #C1B0CC;
+  display: block;
+  font-family: "DK-HEITI", 黑体, sans-serif;
+  font-size: 1.125em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  padding-bottom: 14px;
+  padding-top: 15px;
+  text-align: center;
+  text-shadow: 0 1px 1px #111;
+}
+.ovaltxt {
+  color: #92EBA8;
+  display: block;
+  font-family: "DK-XIHEITI", sans-serif;
+  font-size: 0.75em;
+  line-height: 130%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+  text-indent: 2em;
+}
+.post {
+  border-left-color: #000;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #000;
+  border-right-style: solid;
+  border-right-width: 1px;
+  display: block;
+  font-family: "方正小标宋_GBK", "DK-XIAOBIAOSONG";
+  font-size: 1.125em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: 4%;
+  margin-top: 2em;
+  padding-bottom: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 6px;
+  width: 1em;
+}
+.post1 {
+  display: block;
+  font-family: "DK-FANGSONG", 仿宋, "fs", "fangsong", sans-serif;
+  line-height: 130%;
+  margin-bottom: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1em;
+  text-align: justify;
+  text-indent: 2em;
+}
+.sign {
+  display: block;
+  duokan-text-indent: 0;
+  font-family: "DK-KAITI", "kt", "楷体", "zw", serif;
+  line-height: 130%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 4%;
+  margin-top: 1em;
+  text-align: right;
+  text-indent: 0;
+}
+.speci {
+  background: #f7fcf6 url(OEBPS/Images/girl.jpg) no-repeat bottom left;
+  background-size: 70% auto;
+  display: block;
+  font-family: "DK-SONGTI", "st", "宋体", "zw", sans-serif;
+  font-size: 1em;
+  line-height: 130%;
+  margin-bottom: 0;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-top: 0;
+  padding-bottom: 0%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0%;
+  text-align: justify;
+}
+.vol {
+  color: #3B2735;
+  display: block;
+  font-family: "方正小标宋_GBK", "DK-XIAOBIAOSONG";
+  font-size: 1.41667em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-bottom: 0.8em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.8em;
+  text-align: center;
+  text-indent: 0;
+  text-shadow: none;
+}
+.xchar {
+  display: block;
+  duokan-text-indent: 0;
+  font-family: "DK-KAITI", "kt", "楷体", "楷体_gb2312";
+  line-height: 130%;
+  margin-bottom: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1em;
+  text-align: justify;
+  text-indent: 0;
+}
+.xchar1 {
+  display: block;
+  duokan-text-indent: 0;
+  font-family: "DK-KAITI", "kt", "楷体", "楷体_gb2312";
+  font-size: 1.125em;
+  font-weight: bold;
+  line-height: 130%;
+  margin-bottom: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 3em;
+  text-align: justify;
+  text-indent: 0;
+}
